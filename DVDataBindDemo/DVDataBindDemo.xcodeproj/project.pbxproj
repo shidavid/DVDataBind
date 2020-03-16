@@ -8,13 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		FF90E1B5241F615F00BCA018 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E1B4241F615F00BCA018 /* AppDelegate.m */; };
-		FF90E1BB241F615F00BCA018 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E1BA241F615F00BCA018 /* ViewController.m */; };
-		FF90E1BE241F615F00BCA018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF90E1BC241F615F00BCA018 /* Main.storyboard */; };
 		FF90E1C0241F616100BCA018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90E1BF241F616100BCA018 /* Assets.xcassets */; };
 		FF90E1C3241F616100BCA018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF90E1C1241F616100BCA018 /* LaunchScreen.storyboard */; };
 		FF90E1C6241F616200BCA018 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E1C5241F616200BCA018 /* main.m */; };
 		FF90E25E241F673D00BCA018 /* DVDataBindKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF90E21C241F646000BCA018 /* DVDataBindKit.framework */; };
 		FF90E25F241F673D00BCA018 /* DVDataBindKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF90E21C241F646000BCA018 /* DVDataBindKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF90E274241F750400BCA018 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E273241F750400BCA018 /* RootNavigationController.m */; };
+		FF90E277241F751200BCA018 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E276241F751200BCA018 /* MainViewController.m */; };
+		FF90E27E241F765E00BCA018 /* AppDelegate+UISetting.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E27D241F765E00BCA018 /* AppDelegate+UISetting.m */; };
+		FF90E2D2241F774700BCA018 /* UITableView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E281241F774600BCA018 /* UITableView+Common.m */; };
+		FF90E2D3241F774700BCA018 /* UIColor+BaseColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E282241F774600BCA018 /* UIColor+BaseColor.m */; };
+		FF90E2D4241F774700BCA018 /* UIColor+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E284241F774600BCA018 /* UIColor+Common.m */; };
+		FF90E2D5241F774700BCA018 /* UINavigationController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E285241F774600BCA018 /* UINavigationController+Common.m */; };
+		FF90E2D6241F774700BCA018 /* UIBarButtonItem+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E286241F774600BCA018 /* UIBarButtonItem+Common.m */; };
+		FF90E2D8241F774700BCA018 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E288241F774600BCA018 /* UIView+Common.m */; };
+		FF90E2D9241F774700BCA018 /* UIToolbar+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E289241F774600BCA018 /* UIToolbar+Common.m */; };
+		FF90E2DA241F774700BCA018 /* UIButton+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E28A241F774600BCA018 /* UIButton+Common.m */; };
+		FF90E2DB241F774700BCA018 /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E28F241F774600BCA018 /* UIViewController+Common.m */; };
+		FF90E2DC241F774700BCA018 /* UICollectionView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E291241F774600BCA018 /* UICollectionView+Common.m */; };
+		FF90E2DD241F774700BCA018 /* UITextField+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E294241F774600BCA018 /* UITextField+Common.m */; };
+		FF90E2DE241F774700BCA018 /* UIPanGestureRecognizer+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E299241F774600BCA018 /* UIPanGestureRecognizer+Common.m */; };
+		FF90E2E0241F774700BCA018 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E2A1241F774600BCA018 /* UIImage+Common.m */; };
+		FF90E2E1241F774700BCA018 /* UILabel+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E2A2241F774600BCA018 /* UILabel+Common.m */; };
+		FF90E2E3241F774700BCA018 /* UITabBarController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E2A4241F774600BCA018 /* UITabBarController+Common.m */; };
+		FF90E30A241F7B4100BCA018 /* MainTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E309241F7B4100BCA018 /* MainTableView.m */; };
+		FF90E30D241F7DC800BCA018 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E30C241F7DC800BCA018 /* MainViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +63,53 @@
 		FF90E1B0241F615F00BCA018 /* DVDataBindDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVDataBindDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF90E1B3241F615F00BCA018 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF90E1B4241F615F00BCA018 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FF90E1B9241F615F00BCA018 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FF90E1BA241F615F00BCA018 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FF90E1BD241F615F00BCA018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF90E1BF241F616100BCA018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF90E1C2241F616100BCA018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FF90E1C4241F616100BCA018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF90E1C5241F616200BCA018 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF90E217241F646000BCA018 /* DVDataBindKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DVDataBindKit.xcodeproj; path = ../DVDataBindKit/DVDataBindKit.xcodeproj; sourceTree = "<group>"; };
+		FF90E272241F750400BCA018 /* RootNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
+		FF90E273241F750400BCA018 /* RootNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
+		FF90E275241F751200BCA018 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FF90E276241F751200BCA018 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FF90E27C241F765E00BCA018 /* AppDelegate+UISetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UISetting.h"; sourceTree = "<group>"; };
+		FF90E27D241F765E00BCA018 /* AppDelegate+UISetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UISetting.m"; sourceTree = "<group>"; };
+		FF90E281241F774600BCA018 /* UITableView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Common.m"; sourceTree = "<group>"; };
+		FF90E282241F774600BCA018 /* UIColor+BaseColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BaseColor.m"; sourceTree = "<group>"; };
+		FF90E283241F774600BCA018 /* UITextField+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Common.h"; sourceTree = "<group>"; };
+		FF90E284241F774600BCA018 /* UIColor+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Common.m"; sourceTree = "<group>"; };
+		FF90E285241F774600BCA018 /* UINavigationController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Common.m"; sourceTree = "<group>"; };
+		FF90E286241F774600BCA018 /* UIBarButtonItem+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Common.m"; sourceTree = "<group>"; };
+		FF90E288241F774600BCA018 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		FF90E289241F774600BCA018 /* UIToolbar+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+Common.m"; sourceTree = "<group>"; };
+		FF90E28A241F774600BCA018 /* UIButton+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Common.m"; sourceTree = "<group>"; };
+		FF90E28B241F774600BCA018 /* UIPanGestureRecognizer+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPanGestureRecognizer+Common.h"; sourceTree = "<group>"; };
+		FF90E28C241F774600BCA018 /* UITabBarController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Common.h"; sourceTree = "<group>"; };
+		FF90E28E241F774600BCA018 /* UILabel+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Common.h"; sourceTree = "<group>"; };
+		FF90E28F241F774600BCA018 /* UIViewController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Common.m"; sourceTree = "<group>"; };
+		FF90E290241F774600BCA018 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		FF90E291241F774600BCA018 /* UICollectionView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Common.m"; sourceTree = "<group>"; };
+		FF90E293241F774600BCA018 /* UIColor+BaseColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BaseColor.h"; sourceTree = "<group>"; };
+		FF90E294241F774600BCA018 /* UITextField+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Common.m"; sourceTree = "<group>"; };
+		FF90E295241F774600BCA018 /* UITableView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Common.h"; sourceTree = "<group>"; };
+		FF90E296241F774600BCA018 /* UIBarButtonItem+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Common.h"; sourceTree = "<group>"; };
+		FF90E297241F774600BCA018 /* UIColor+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Common.h"; sourceTree = "<group>"; };
+		FF90E298241F774600BCA018 /* UINavigationController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Common.h"; sourceTree = "<group>"; };
+		FF90E299241F774600BCA018 /* UIPanGestureRecognizer+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPanGestureRecognizer+Common.m"; sourceTree = "<group>"; };
+		FF90E29A241F774600BCA018 /* UIButton+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Common.h"; sourceTree = "<group>"; };
+		FF90E29B241F774600BCA018 /* UIToolbar+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+Common.h"; sourceTree = "<group>"; };
+		FF90E29C241F774600BCA018 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		FF90E29F241F774600BCA018 /* UICollectionView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Common.h"; sourceTree = "<group>"; };
+		FF90E2A0241F774600BCA018 /* UIViewController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Common.h"; sourceTree = "<group>"; };
+		FF90E2A1241F774600BCA018 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		FF90E2A2241F774600BCA018 /* UILabel+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Common.m"; sourceTree = "<group>"; };
+		FF90E2A4241F774600BCA018 /* UITabBarController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Common.m"; sourceTree = "<group>"; };
+		FF90E2D1241F774600BCA018 /* DVCategoryKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVCategoryKit.h; sourceTree = "<group>"; };
+		FF90E2FB241F77FD00BCA018 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF90E302241F790200BCA018 /* Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.pch; sourceTree = "<group>"; };
+		FF90E308241F7B4100BCA018 /* MainTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableView.h; sourceTree = "<group>"; };
+		FF90E309241F7B4100BCA018 /* MainTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableView.m; sourceTree = "<group>"; };
+		FF90E30B241F7DC800BCA018 /* MainViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewModel.h; sourceTree = "<group>"; };
+		FF90E30C241F7DC800BCA018 /* MainViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,13 +147,13 @@
 			children = (
 				FF90E1B3241F615F00BCA018 /* AppDelegate.h */,
 				FF90E1B4241F615F00BCA018 /* AppDelegate.m */,
-				FF90E1B9241F615F00BCA018 /* ViewController.h */,
-				FF90E1BA241F615F00BCA018 /* ViewController.m */,
-				FF90E1BC241F615F00BCA018 /* Main.storyboard */,
-				FF90E1BF241F616100BCA018 /* Assets.xcassets */,
-				FF90E1C1241F616100BCA018 /* LaunchScreen.storyboard */,
-				FF90E1C4241F616100BCA018 /* Info.plist */,
-				FF90E1C5241F616200BCA018 /* main.m */,
+				FF90E27C241F765E00BCA018 /* AppDelegate+UISetting.h */,
+				FF90E27D241F765E00BCA018 /* AppDelegate+UISetting.m */,
+				FF90E271241F74BC00BCA018 /* UI */,
+				FF90E300241F787E00BCA018 /* Define */,
+				FF90E27F241F774600BCA018 /* Category */,
+				FF90E2F9241F774B00BCA018 /* Project */,
+				FF90E2FA241F775A00BCA018 /* Other */,
 			);
 			path = DVDataBindDemo;
 			sourceTree = "<group>";
@@ -114,6 +171,165 @@
 				FF90E21C241F646000BCA018 /* DVDataBindKit.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FF90E271241F74BC00BCA018 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FF90E272241F750400BCA018 /* RootNavigationController.h */,
+				FF90E273241F750400BCA018 /* RootNavigationController.m */,
+				FF90E303241F7AA600BCA018 /* MainViewController */,
+				FF90E27B241F751C00BCA018 /* New Group3 */,
+				FF90E27A241F751A00BCA018 /* New Group2 */,
+				FF90E279241F751800BCA018 /* New Group1 */,
+				FF90E278241F751600BCA018 /* New Group */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FF90E278241F751600BCA018 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		FF90E279241F751800BCA018 /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		FF90E27A241F751A00BCA018 /* New Group2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		FF90E27B241F751C00BCA018 /* New Group3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group3";
+			sourceTree = "<group>";
+		};
+		FF90E27F241F774600BCA018 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FF90E2D1241F774600BCA018 /* DVCategoryKit.h */,
+				FF90E280241F774600BCA018 /* UI */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		FF90E280241F774600BCA018 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FF90E296241F774600BCA018 /* UIBarButtonItem+Common.h */,
+				FF90E286241F774600BCA018 /* UIBarButtonItem+Common.m */,
+				FF90E29A241F774600BCA018 /* UIButton+Common.h */,
+				FF90E28A241F774600BCA018 /* UIButton+Common.m */,
+				FF90E29F241F774600BCA018 /* UICollectionView+Common.h */,
+				FF90E291241F774600BCA018 /* UICollectionView+Common.m */,
+				FF90E293241F774600BCA018 /* UIColor+BaseColor.h */,
+				FF90E282241F774600BCA018 /* UIColor+BaseColor.m */,
+				FF90E297241F774600BCA018 /* UIColor+Common.h */,
+				FF90E284241F774600BCA018 /* UIColor+Common.m */,
+				FF90E290241F774600BCA018 /* UIImage+Common.h */,
+				FF90E2A1241F774600BCA018 /* UIImage+Common.m */,
+				FF90E28E241F774600BCA018 /* UILabel+Common.h */,
+				FF90E2A2241F774600BCA018 /* UILabel+Common.m */,
+				FF90E298241F774600BCA018 /* UINavigationController+Common.h */,
+				FF90E285241F774600BCA018 /* UINavigationController+Common.m */,
+				FF90E28B241F774600BCA018 /* UIPanGestureRecognizer+Common.h */,
+				FF90E299241F774600BCA018 /* UIPanGestureRecognizer+Common.m */,
+				FF90E28C241F774600BCA018 /* UITabBarController+Common.h */,
+				FF90E2A4241F774600BCA018 /* UITabBarController+Common.m */,
+				FF90E295241F774600BCA018 /* UITableView+Common.h */,
+				FF90E281241F774600BCA018 /* UITableView+Common.m */,
+				FF90E283241F774600BCA018 /* UITextField+Common.h */,
+				FF90E294241F774600BCA018 /* UITextField+Common.m */,
+				FF90E29B241F774600BCA018 /* UIToolbar+Common.h */,
+				FF90E289241F774600BCA018 /* UIToolbar+Common.m */,
+				FF90E29C241F774600BCA018 /* UIView+Common.h */,
+				FF90E288241F774600BCA018 /* UIView+Common.m */,
+				FF90E2A0241F774600BCA018 /* UIViewController+Common.h */,
+				FF90E28F241F774600BCA018 /* UIViewController+Common.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FF90E2F9241F774B00BCA018 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				FF90E2FB241F77FD00BCA018 /* Info.plist */,
+				FF90E1BF241F616100BCA018 /* Assets.xcassets */,
+				FF90E1C1241F616100BCA018 /* LaunchScreen.storyboard */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		FF90E2FA241F775A00BCA018 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FF90E1C5241F616200BCA018 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FF90E300241F787E00BCA018 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				FF90E302241F790200BCA018 /* Header.pch */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		FF90E303241F7AA600BCA018 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF90E304241F7AB700BCA018 /* ViewController */,
+				FF90E305241F7ABD00BCA018 /* View */,
+				FF90E307241F7AC500BCA018 /* ViewModel */,
+				FF90E306241F7AC100BCA018 /* Model */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		FF90E304241F7AB700BCA018 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF90E275241F751200BCA018 /* MainViewController.h */,
+				FF90E276241F751200BCA018 /* MainViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FF90E305241F7ABD00BCA018 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF90E308241F7B4100BCA018 /* MainTableView.h */,
+				FF90E309241F7B4100BCA018 /* MainTableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF90E306241F7AC100BCA018 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF90E307241F7AC500BCA018 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF90E30B241F7DC800BCA018 /* MainViewModel.h */,
+				FF90E30C241F7DC800BCA018 /* MainViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +408,6 @@
 			files = (
 				FF90E1C3241F616100BCA018 /* LaunchScreen.storyboard in Resources */,
 				FF90E1C0241F616100BCA018 /* Assets.xcassets in Resources */,
-				FF90E1BE241F615F00BCA018 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,23 +418,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF90E1BB241F615F00BCA018 /* ViewController.m in Sources */,
+				FF90E2D5241F774700BCA018 /* UINavigationController+Common.m in Sources */,
+				FF90E27E241F765E00BCA018 /* AppDelegate+UISetting.m in Sources */,
+				FF90E2D3241F774700BCA018 /* UIColor+BaseColor.m in Sources */,
+				FF90E274241F750400BCA018 /* RootNavigationController.m in Sources */,
+				FF90E2D2241F774700BCA018 /* UITableView+Common.m in Sources */,
+				FF90E2D6241F774700BCA018 /* UIBarButtonItem+Common.m in Sources */,
+				FF90E2E1241F774700BCA018 /* UILabel+Common.m in Sources */,
+				FF90E2D4241F774700BCA018 /* UIColor+Common.m in Sources */,
+				FF90E2D8241F774700BCA018 /* UIView+Common.m in Sources */,
 				FF90E1B5241F615F00BCA018 /* AppDelegate.m in Sources */,
+				FF90E2DE241F774700BCA018 /* UIPanGestureRecognizer+Common.m in Sources */,
+				FF90E2DA241F774700BCA018 /* UIButton+Common.m in Sources */,
+				FF90E2E3241F774700BCA018 /* UITabBarController+Common.m in Sources */,
+				FF90E277241F751200BCA018 /* MainViewController.m in Sources */,
+				FF90E30A241F7B4100BCA018 /* MainTableView.m in Sources */,
 				FF90E1C6241F616200BCA018 /* main.m in Sources */,
+				FF90E2DC241F774700BCA018 /* UICollectionView+Common.m in Sources */,
+				FF90E30D241F7DC800BCA018 /* MainViewModel.m in Sources */,
+				FF90E2E0241F774700BCA018 /* UIImage+Common.m in Sources */,
+				FF90E2DB241F774700BCA018 /* UIViewController+Common.m in Sources */,
+				FF90E2DD241F774700BCA018 /* UITextField+Common.m in Sources */,
+				FF90E2D9241F774700BCA018 /* UIToolbar+Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FF90E1BC241F615F00BCA018 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF90E1BD241F615F00BCA018 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FF90E1C1241F616100BCA018 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -346,13 +572,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.1;
 				DEVELOPMENT_TEAM = XZPDBM94SC;
-				INFOPLIST_FILE = DVDataBindDemo/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DVDataBindDemo/Define/Header.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DVDataBindDemo/Project/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvkit.until.databind.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -364,13 +594,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.1;
 				DEVELOPMENT_TEAM = XZPDBM94SC;
-				INFOPLIST_FILE = DVDataBindDemo/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DVDataBindDemo/Define/Header.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DVDataBindDemo/Project/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvkit.until.databind.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
