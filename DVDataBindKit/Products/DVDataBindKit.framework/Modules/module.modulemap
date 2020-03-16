@@ -1,0 +1,6 @@
+framework module DVDataBindKit {
+  umbrella header "DVDataBindKit.h"
+
+  export *
+  module * { export * }
+}

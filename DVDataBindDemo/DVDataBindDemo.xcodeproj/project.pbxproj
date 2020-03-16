@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF90E1B5241F615F00BCA018 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E1B4241F615F00BCA018 /* AppDelegate.m */; };
+		FF90E1BB241F615F00BCA018 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E1BA241F615F00BCA018 /* ViewController.m */; };
+		FF90E1BE241F615F00BCA018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF90E1BC241F615F00BCA018 /* Main.storyboard */; };
+		FF90E1C0241F616100BCA018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90E1BF241F616100BCA018 /* Assets.xcassets */; };
+		FF90E1C3241F616100BCA018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF90E1C1241F616100BCA018 /* LaunchScreen.storyboard */; };
+		FF90E1C6241F616200BCA018 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E1C5241F616200BCA018 /* main.m */; };
+		FF90E25E241F673D00BCA018 /* DVDataBindKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF90E21C241F646000BCA018 /* DVDataBindKit.framework */; };
+		FF90E25F241F673D00BCA018 /* DVDataBindKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF90E21C241F646000BCA018 /* DVDataBindKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF90E21B241F646000BCA018 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF90E217241F646000BCA018 /* DVDataBindKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF90E20C241F644A00BCA018;
+			remoteInfo = DVDataBindKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF90E1D5241F617C00BCA018 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF90E25F241F673D00BCA018 /* DVDataBindKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FF90E1B0241F615F00BCA018 /* DVDataBindDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVDataBindDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF90E1B3241F615F00BCA018 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF90E1B4241F615F00BCA018 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF90E1B9241F615F00BCA018 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF90E1BA241F615F00BCA018 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF90E1BD241F615F00BCA018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF90E1BF241F616100BCA018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF90E1C2241F616100BCA018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF90E1C4241F616100BCA018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF90E1C5241F616200BCA018 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF90E217241F646000BCA018 /* DVDataBindKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DVDataBindKit.xcodeproj; path = ../DVDataBindKit/DVDataBindKit.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF90E1AD241F615F00BCA018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF90E25E241F673D00BCA018 /* DVDataBindKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF90E1A7241F615F00BCA018 = {
+			isa = PBXGroup;
+			children = (
+				FF90E217241F646000BCA018 /* DVDataBindKit.xcodeproj */,
+				FF90E1B2241F615F00BCA018 /* DVDataBindDemo */,
+				FF90E1B1241F615F00BCA018 /* Products */,
+				FF90E1D2241F617C00BCA018 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF90E1B1241F615F00BCA018 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF90E1B0241F615F00BCA018 /* DVDataBindDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF90E1B2241F615F00BCA018 /* DVDataBindDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FF90E1B3241F615F00BCA018 /* AppDelegate.h */,
+				FF90E1B4241F615F00BCA018 /* AppDelegate.m */,
+				FF90E1B9241F615F00BCA018 /* ViewController.h */,
+				FF90E1BA241F615F00BCA018 /* ViewController.m */,
+				FF90E1BC241F615F00BCA018 /* Main.storyboard */,
+				FF90E1BF241F616100BCA018 /* Assets.xcassets */,
+				FF90E1C1241F616100BCA018 /* LaunchScreen.storyboard */,
+				FF90E1C4241F616100BCA018 /* Info.plist */,
+				FF90E1C5241F616200BCA018 /* main.m */,
+			);
+			path = DVDataBindDemo;
+			sourceTree = "<group>";
+		};
+		FF90E1D2241F617C00BCA018 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF90E218241F646000BCA018 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF90E21C241F646000BCA018 /* DVDataBindKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF90E1AF241F615F00BCA018 /* DVDataBindDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF90E1C9241F616200BCA018 /* Build configuration list for PBXNativeTarget "DVDataBindDemo" */;
+			buildPhases = (
+				FF90E1AC241F615F00BCA018 /* Sources */,
+				FF90E1AD241F615F00BCA018 /* Frameworks */,
+				FF90E1AE241F615F00BCA018 /* Resources */,
+				FF90E1D5241F617C00BCA018 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DVDataBindDemo;
+			productName = DVDataBindDemo;
+			productReference = FF90E1B0241F615F00BCA018 /* DVDataBindDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF90E1A8241F615F00BCA018 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = DVUntilKit;
+				TargetAttributes = {
+					FF90E1AF241F615F00BCA018 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FF90E1AB241F615F00BCA018 /* Build configuration list for PBXProject "DVDataBindDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF90E1A7241F615F00BCA018;
+			productRefGroup = FF90E1B1241F615F00BCA018 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FF90E218241F646000BCA018 /* Products */;
+					ProjectRef = FF90E217241F646000BCA018 /* DVDataBindKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FF90E1AF241F615F00BCA018 /* DVDataBindDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FF90E21C241F646000BCA018 /* DVDataBindKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DVDataBindKit.framework;
+			remoteRef = FF90E21B241F646000BCA018 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF90E1AE241F615F00BCA018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF90E1C3241F616100BCA018 /* LaunchScreen.storyboard in Resources */,
+				FF90E1C0241F616100BCA018 /* Assets.xcassets in Resources */,
+				FF90E1BE241F615F00BCA018 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF90E1AC241F615F00BCA018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF90E1BB241F615F00BCA018 /* ViewController.m in Sources */,
+				FF90E1B5241F615F00BCA018 /* AppDelegate.m in Sources */,
+				FF90E1C6241F616200BCA018 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF90E1BC241F615F00BCA018 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF90E1BD241F615F00BCA018 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF90E1C1241F616100BCA018 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF90E1C2241F616100BCA018 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF90E1C7241F616200BCA018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF90E1C8241F616200BCA018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF90E1CA241F616200BCA018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XZPDBM94SC;
+				INFOPLIST_FILE = DVDataBindDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvkit.until.databind.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF90E1CB241F616200BCA018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XZPDBM94SC;
+				INFOPLIST_FILE = DVDataBindDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvkit.until.databind.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF90E1AB241F615F00BCA018 /* Build configuration list for PBXProject "DVDataBindDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF90E1C7241F616200BCA018 /* Debug */,
+				FF90E1C8241F616200BCA018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF90E1C9241F616200BCA018 /* Build configuration list for PBXNativeTarget "DVDataBindDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF90E1CA241F616200BCA018 /* Debug */,
+				FF90E1CB241F616200BCA018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF90E1A8241F615F00BCA018 /* Project object */;
+}
