@@ -33,7 +33,7 @@
 - (void)initViews {
     self.mainView = ({
         MainTableView *v;
-        v = [[MainTableView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+        v = [[MainTableView alloc] initWithFrame:DVFrame.frame_not_nav];
         v.mtvDelegate = self;
         v;
     });

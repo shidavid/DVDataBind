@@ -10,6 +10,8 @@
 
 @interface MainTableView () <UITableViewDelegate, UITableViewDataSource>
 
+@property(nonatomic, strong) NSArray<NSString *> *keys;
+
 @end
 
 
@@ -34,8 +36,9 @@
 
 
 #pragma mark - <-- Property -->
-- (void)setModels:(NSArray<NSString *> *)models {
+- (void)setModels:(NSDictionary<NSString *,NSString *> *)models {
     _models = models;
+    _keys = models.allKeys;
     [self reloadData];
 }
 
@@ -54,15 +57,15 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.models ? self.models.count : 0;
+    return self.keys ? self.keys.count : 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    if (cell && self.models && indexPath.row < self.models.count) {
-        cell.textLabel.text = self.models[indexPath.row];
+    if (cell && self.keys && indexPath.row < self.keys.count) {
+        cell.textLabel.text = self.keys[indexPath.row];
     }
 
     return cell;
@@ -71,8 +74,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    if (self.mtvDelegate && self.models && indexPath.row < self.models.count) {
-        [self.mtvDelegate MainTableView:self didSelectItem:self.models[indexPath.row]];
+    if (self.mtvDelegate && self.keys && indexPath.row < self.keys.count) {
+        NSString *key = self.keys[indexPath.row];
+        NSString *value = self.models[key];
+        [self.mtvDelegate MainTableView:self didSelectItem:value];
     }
 }
 

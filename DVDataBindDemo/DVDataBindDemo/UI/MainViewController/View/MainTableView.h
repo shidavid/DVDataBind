@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MainTableView : UITableView
 
 @property(nonatomic, weak) id<MainTableViewDelegate> mtvDelegate;
-@property(nonatomic, strong) NSArray<NSString *> *models;
+@property(nonatomic, strong) NSDictionary<NSString *, NSString *> *models;
 
 
 @end

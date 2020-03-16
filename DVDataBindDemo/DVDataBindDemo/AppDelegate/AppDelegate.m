@@ -10,6 +10,7 @@
 #import "RootNavigationController.h"
 #import "MainViewController.h"
 #import "AppDelegate+UISetting.h"
+#import "AppDelegate+Notification.h"
 
 @interface AppDelegate ()
 
@@ -26,6 +27,7 @@
     [self.window makeKeyAndVisible];
     
     [self UISetting];
+    [self addGlobalNotification];
     
     return YES;
 }

@@ -30,13 +30,19 @@ typedef DVDataBind *_Nonnull(^DataBindFilterBlock)(DBBoolAnyBlock block);
 #pragma mark - <-------------------- Class -------------------->
 /**
  数据双向绑定
- 用法例子: DVDataBind._inout(self.model,@"title")._inout(self.label,@"text");
  @code
+ UITextField *textField;
+ UILabel *lable;
+ 
  DVDataBind
- ._inout(self.model,@"title")
- ._inout(self.label,@"text")
- ._out_any(^(NSString *value){
-    value 处理代码
+ ._inout(self.textField, @"text", UIControlEventEditingChanged)
+ ._inout(self.label, @"text")
+ ._filter(^BOOL(NSString *string) {
+    //string 处理
+    return YES/NO; //返回YES可更新新值
+ })
+ ._out_key_any(@"com.key.xxx", ^(NSString *string){
+    //string 处理
  });
  @endcode
  */

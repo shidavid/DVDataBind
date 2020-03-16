@@ -1,5 +1,5 @@
 //
-//  MainViewModel.h
+//  OneOnOneModel.h
 //  DVDataBindDemo
 //
 //  Created by mlgPro on 2020/3/16.
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainViewModel : NSObject
-
-- (NSDictionary<NSString *, NSString *> *)tableItems;
+@interface OneOnOneModel : NSObject
 
 @end
 

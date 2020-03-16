@@ -10,13 +10,13 @@
 
 @implementation MainViewModel
 
-- (NSArray<NSString *> *)tableItems {
-    return @[
-        @"",
-        @"",
-        @"",
-        @"",
-    ];
+- (NSDictionary<NSString *,NSString *> *)tableItems {
+    return @{
+        @"双向数据绑定" : @"",
+        @"" : @"",
+        @"" : @"",
+        @"" : @"",
+    };
 }
 
 @end
