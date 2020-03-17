@@ -41,6 +41,31 @@
     return [NSString stringWithFormat:@"%lx", (unsigned long)[self hash]];
 }
 
+- (DBPropertyType)db_propertyType {
+    if ([self isKindOfClass:[NSNumber class]]) {
+        NSNumber *num = (NSNumber *)self;
+        const char *type = num.objCType;
+        return [self db_getPropertyRealType:type];
+    }
+    else if ([self isKindOfClass:[NSString class]]) {
+        return DBPropertyType_NSString;
+    }
+    else if ([self isKindOfClass:[NSArray class]]) {
+        return DBPropertyType_NSArray;
+    }
+    else if ([self isKindOfClass:[NSDictionary class]]) {
+        return DBPropertyType_NSArray;
+    }
+    else if ([self isKindOfClass:[NSSet class]]) {
+        return DBPropertyType_NSSet;
+    }
+    else if ([self isKindOfClass:[NSObject class]] ) {
+        return DBPropertyType_NSObject;
+    }
+    
+    return DBPropertyType_Void;
+}
+
 
 #pragma mark - <-- Method -->
 - (DBPropertyType)db_getDBPropertyTypeWithName:(NSString *)propertyName {

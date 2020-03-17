@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SegmentedViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Qfv-F9-GfL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SegmentedView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WT7-80-PCO">
+                    <rect key="frame" x="20" y="84" width="374" height="32"/>
+                    <segments>
+                        <segment title="0"/>
+                        <segment title="1"/>
+                        <segment title="2"/>
+                        <segment title="3"/>
+                        <segment title="4"/>
+                    </segments>
+                </segmentedControl>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5o5-j4-dDc">
+                    <rect key="frame" x="160" y="155" width="94" height="32"/>
+                </stepper>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qI0-Xa-k8t">
+                    <rect key="frame" x="20" y="227" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="15a-4R-gWa"/>
+                    </constraints>
+                    <state key="normal" title="点击将 model的index设为 3"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WT7-80-PCO" secondAttribute="trailing" constant="20" id="4iE-bA-i8p"/>
+                <constraint firstItem="WT7-80-PCO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="6lw-ez-5D1"/>
+                <constraint firstItem="WT7-80-PCO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="DJk-Pt-lXN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qI0-Xa-k8t" secondAttribute="trailing" constant="20" id="Ddi-WI-1OP"/>
+                <constraint firstItem="qI0-Xa-k8t" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Kc5-oQ-S1w"/>
+                <constraint firstItem="qI0-Xa-k8t" firstAttribute="top" secondItem="5o5-j4-dDc" secondAttribute="bottom" constant="40" id="Wl0-Ej-2B7"/>
+                <constraint firstItem="5o5-j4-dDc" firstAttribute="top" secondItem="WT7-80-PCO" secondAttribute="bottom" constant="40" id="Xx8-0k-zZY"/>
+                <constraint firstItem="5o5-j4-dDc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nlv-OO-QWz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnChangeIndex" destination="qI0-Xa-k8t" id="hYX-6T-crL"/>
+                <outlet property="segmented" destination="WT7-80-PCO" id="R9X-aB-vHN"/>
+                <outlet property="stepper" destination="5o5-j4-dDc" id="mBw-yl-GYk"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="88"/>
+        </view>
+    </objects>
+</document>

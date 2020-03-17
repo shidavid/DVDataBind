@@ -13,6 +13,11 @@
 - (NSDictionary<NSString *,NSString *> *)tableItems {
     return @{
         @"UISwitch 例子" : @"SwitchViewController",
+        @"UITextField 例子" : @"TextFieldViewController",
+        @"UIImageView 例子" : @"ImageViewController",
+        @"UISlider 例子" : @"SliderViewController",
+        @"UISegmentControl 例子" : @"SegmentedViewController",
+        @"数组 例子" : @"ArrayViewController",
     };
 }
 

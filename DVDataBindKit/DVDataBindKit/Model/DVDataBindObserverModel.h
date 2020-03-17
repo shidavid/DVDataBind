@@ -25,9 +25,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy, nullable) DBAnyAnyBlock convertBlock;
 @property(nonatomic, copy) NSString *targetHash;
 @property(nonatomic, weak) id oldValue;
+@property(nonatomic, copy) NSString *oldString;
 //@property(nonatomic, assign) id oldValueForObject;
 @property(nonatomic, assign) DVDataBindType dbType;
 @property(nonatomic, assign) DVDataBindObserverModelType modelType;
+@property(nonatomic, assign) DBPropertyType propertyType;
 
 //UI
 @property(nonatomic, assign) SEL selector;

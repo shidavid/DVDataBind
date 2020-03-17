@@ -27,13 +27,10 @@
         self.oldValue = [target valueForKey:keyPath];
         self.dbType = dbType;
         self.modelType = DVDataBindObserverModelType_Object;
+        self.propertyType = [target db_getDBPropertyTypeWithName:keyPath];
         _context = context;
         self.index = NSUIntegerMax;
-        
-        if (!self.oldValue) {
-            DBPropertyType type = [self.target db_getDBPropertyTypeWithName:keyPath];
-            if (type == DBPropertyType_NSString) self.oldValue = @"";
-        }
+        self.oldString = @"";
     }
     return self;
 }
@@ -55,14 +52,11 @@
         self.oldValue = [target valueForKey:keyPath];
         self.dbType = dbType;
         self.modelType = DVDataBindObserverModelType_UI;
+        self.propertyType = [target db_getDBPropertyTypeWithName:keyPath];
         self.selector = selector;
         self.ctrlEvent = ctrlEvent;
         self.index = NSUIntegerMax;
-        
-        if (!self.oldValue) {
-            DBPropertyType type = [self.target db_getDBPropertyTypeWithName:keyPath];
-            if (type == DBPropertyType_NSString) self.oldValue = @"";
-        }
+        self.oldString = @"";
     }
     return self;
 }
@@ -82,11 +76,14 @@
         self.targetHash = [(NSObject *)target db_Hash];
         self.dbType = dbType;
         self.modelType = DVDataBindObserverModelType_Array;
+        self.propertyType = [target db_getDBPropertyTypeWithName:keyPath];
         self.index = index;
-       
+        self.oldString = @"";
+        
         NSMutableArray *array = [target valueForKey:keyPath];
         if (array && index < array.count) {
-             self.oldValue = array[index];
+            self.oldValue = array[index];
+            self.propertyType = [(NSObject *)array[index] db_propertyType];
         }
     }
     return self;

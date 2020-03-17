@@ -11,6 +11,27 @@
 		FF653263242058E800D01F1D /* SwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF653262242058E800D01F1D /* SwitchView.m */; };
 		FF653265242058F800D01F1D /* SwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF653264242058F800D01F1D /* SwitchView.xib */; };
 		FF6532682420591A00D01F1D /* SwitchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532672420591A00D01F1D /* SwitchModel.m */; };
+		FF6532822420739D00D01F1D /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532812420739D00D01F1D /* TextFieldViewController.m */; };
+		FF653285242073BA00D01F1D /* TextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF653284242073BA00D01F1D /* TextFieldView.m */; };
+		FF653287242073C400D01F1D /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF653286242073C400D01F1D /* TextFieldView.xib */; };
+		FF65328A2420793600D01F1D /* TextFieldModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532892420793600D01F1D /* TextFieldModel.m */; };
+		FF65329224209F5700D01F1D /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF65329124209F5700D01F1D /* ImageViewController.m */; };
+		FF65329524209F6300D01F1D /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF65329424209F6300D01F1D /* ImageView.m */; };
+		FF65329724209F6B00D01F1D /* ImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF65329624209F6B00D01F1D /* ImageView.xib */; };
+		FF65329A2420A1A700D01F1D /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532992420A1A700D01F1D /* ImageModel.m */; };
+		FF65329F2420A4F800D01F1D /* icon-dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF65329E2420A4F800D01F1D /* icon-dog.jpg */; };
+		FF6532B02420A6EC00D01F1D /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532AF2420A6EC00D01F1D /* SliderViewController.m */; };
+		FF6532B72420A71500D01F1D /* SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532B62420A71500D01F1D /* SliderView.m */; };
+		FF6532B92420A72600D01F1D /* SliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6532B82420A72600D01F1D /* SliderView.xib */; };
+		FF6532BC2420A82300D01F1D /* SliderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532BB2420A82300D01F1D /* SliderModel.m */; };
+		FF6532C32420AFA900D01F1D /* SegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532C22420AFA900D01F1D /* SegmentedViewController.m */; };
+		FF6532CA2420AFC700D01F1D /* SegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532C92420AFC700D01F1D /* SegmentedView.m */; };
+		FF6532CC2420AFD000D01F1D /* SegmentedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6532CB2420AFD000D01F1D /* SegmentedView.xib */; };
+		FF6532CF2420AFE000D01F1D /* SegmentedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532CE2420AFE000D01F1D /* SegmentedModel.m */; };
+		FF6532DA2420B48200D01F1D /* ArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532D92420B48200D01F1D /* ArrayViewController.m */; };
+		FF6532DD2420B48F00D01F1D /* ArrayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532DC2420B48F00D01F1D /* ArrayView.m */; };
+		FF6532E02420B4B000D01F1D /* ArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532DF2420B4B000D01F1D /* ArrayModel.m */; };
+		FF6532E22420B58700D01F1D /* ArrayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6532E12420B58700D01F1D /* ArrayView.xib */; };
 		FF90E1B5241F615F00BCA018 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E1B4241F615F00BCA018 /* AppDelegate.m */; };
 		FF90E1C0241F616100BCA018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90E1BF241F616100BCA018 /* Assets.xcassets */; };
 		FF90E1C3241F616100BCA018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF90E1C1241F616100BCA018 /* LaunchScreen.storyboard */; };
@@ -82,6 +103,42 @@
 		FF653264242058F800D01F1D /* SwitchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchView.xib; sourceTree = "<group>"; };
 		FF6532662420591A00D01F1D /* SwitchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchModel.h; sourceTree = "<group>"; };
 		FF6532672420591A00D01F1D /* SwitchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchModel.m; sourceTree = "<group>"; };
+		FF6532802420739D00D01F1D /* TextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
+		FF6532812420739D00D01F1D /* TextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
+		FF653283242073BA00D01F1D /* TextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldView.h; sourceTree = "<group>"; };
+		FF653284242073BA00D01F1D /* TextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldView.m; sourceTree = "<group>"; };
+		FF653286242073C400D01F1D /* TextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldView.xib; sourceTree = "<group>"; };
+		FF6532882420793600D01F1D /* TextFieldModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldModel.h; sourceTree = "<group>"; };
+		FF6532892420793600D01F1D /* TextFieldModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldModel.m; sourceTree = "<group>"; };
+		FF65329024209F5700D01F1D /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		FF65329124209F5700D01F1D /* ImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		FF65329324209F6300D01F1D /* ImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageView.h; sourceTree = "<group>"; };
+		FF65329424209F6300D01F1D /* ImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageView.m; sourceTree = "<group>"; };
+		FF65329624209F6B00D01F1D /* ImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageView.xib; sourceTree = "<group>"; };
+		FF6532982420A1A700D01F1D /* ImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		FF6532992420A1A700D01F1D /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		FF65329E2420A4F800D01F1D /* icon-dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon-dog.jpg"; sourceTree = "<group>"; };
+		FF6532AE2420A6EC00D01F1D /* SliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
+		FF6532AF2420A6EC00D01F1D /* SliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
+		FF6532B52420A71500D01F1D /* SliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderView.h; sourceTree = "<group>"; };
+		FF6532B62420A71500D01F1D /* SliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderView.m; sourceTree = "<group>"; };
+		FF6532B82420A72600D01F1D /* SliderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderView.xib; sourceTree = "<group>"; };
+		FF6532BA2420A82300D01F1D /* SliderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderModel.h; sourceTree = "<group>"; };
+		FF6532BB2420A82300D01F1D /* SliderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderModel.m; sourceTree = "<group>"; };
+		FF6532C12420AFA900D01F1D /* SegmentedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentedViewController.h; sourceTree = "<group>"; };
+		FF6532C22420AFA900D01F1D /* SegmentedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentedViewController.m; sourceTree = "<group>"; };
+		FF6532C82420AFC700D01F1D /* SegmentedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentedView.h; sourceTree = "<group>"; };
+		FF6532C92420AFC700D01F1D /* SegmentedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentedView.m; sourceTree = "<group>"; };
+		FF6532CB2420AFD000D01F1D /* SegmentedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentedView.xib; sourceTree = "<group>"; };
+		FF6532CD2420AFE000D01F1D /* SegmentedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentedModel.h; sourceTree = "<group>"; };
+		FF6532CE2420AFE000D01F1D /* SegmentedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentedModel.m; sourceTree = "<group>"; };
+		FF6532D82420B48200D01F1D /* ArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayViewController.h; sourceTree = "<group>"; };
+		FF6532D92420B48200D01F1D /* ArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayViewController.m; sourceTree = "<group>"; };
+		FF6532DB2420B48F00D01F1D /* ArrayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayView.h; sourceTree = "<group>"; };
+		FF6532DC2420B48F00D01F1D /* ArrayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayView.m; sourceTree = "<group>"; };
+		FF6532DE2420B4B000D01F1D /* ArrayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayModel.h; sourceTree = "<group>"; };
+		FF6532DF2420B4B000D01F1D /* ArrayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayModel.m; sourceTree = "<group>"; };
+		FF6532E12420B58700D01F1D /* ArrayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrayView.xib; sourceTree = "<group>"; };
 		FF90E1B0241F615F00BCA018 /* DVDataBindDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVDataBindDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF90E1B3241F615F00BCA018 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF90E1B4241F615F00BCA018 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -170,6 +227,233 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF65327C2420738800D01F1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532882420793600D01F1D /* TextFieldModel.h */,
+				FF6532892420793600D01F1D /* TextFieldModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF65327D2420738800D01F1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF653283242073BA00D01F1D /* TextFieldView.h */,
+				FF653284242073BA00D01F1D /* TextFieldView.m */,
+				FF653286242073C400D01F1D /* TextFieldView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF65327E2420738800D01F1D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532802420739D00D01F1D /* TextFieldViewController.h */,
+				FF6532812420739D00D01F1D /* TextFieldViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FF65327F2420738800D01F1D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF65328B24208F6A00D01F1D /* UIImageView 例子 */ = {
+			isa = PBXGroup;
+			children = (
+				FF65328F24208F7700D01F1D /* ViewController */,
+				FF65328C24208F7700D01F1D /* View */,
+				FF65328D24208F7700D01F1D /* ViewModel */,
+				FF65328E24208F7700D01F1D /* Model */,
+			);
+			path = "UIImageView 例子";
+			sourceTree = "<group>";
+		};
+		FF65328C24208F7700D01F1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF65329324209F6300D01F1D /* ImageView.h */,
+				FF65329424209F6300D01F1D /* ImageView.m */,
+				FF65329624209F6B00D01F1D /* ImageView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF65328D24208F7700D01F1D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF65328E24208F7700D01F1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532982420A1A700D01F1D /* ImageModel.h */,
+				FF6532992420A1A700D01F1D /* ImageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF65328F24208F7700D01F1D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF65329024209F5700D01F1D /* ImageViewController.h */,
+				FF65329124209F5700D01F1D /* ImageViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FF65329B2420A31800D01F1D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FF65329E2420A4F800D01F1D /* icon-dog.jpg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FF6532AD2420A6B600D01F1D /* UISlider 例子 */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532B12420A6F100D01F1D /* ViewController */,
+				FF6532B32420A6F200D01F1D /* View */,
+				FF6532B22420A6F200D01F1D /* ViewModel */,
+				FF6532B42420A6F200D01F1D /* Model */,
+			);
+			path = "UISlider 例子";
+			sourceTree = "<group>";
+		};
+		FF6532B12420A6F100D01F1D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532AE2420A6EC00D01F1D /* SliderViewController.h */,
+				FF6532AF2420A6EC00D01F1D /* SliderViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FF6532B22420A6F200D01F1D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF6532B32420A6F200D01F1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532B52420A71500D01F1D /* SliderView.h */,
+				FF6532B62420A71500D01F1D /* SliderView.m */,
+				FF6532B82420A72600D01F1D /* SliderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF6532B42420A6F200D01F1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532BA2420A82300D01F1D /* SliderModel.h */,
+				FF6532BB2420A82300D01F1D /* SliderModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF6532C02420AF6E00D01F1D /* UISegmented 例子 */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532C42420AFAF00D01F1D /* ViewController */,
+				FF6532C72420AFB000D01F1D /* View */,
+				FF6532C62420AFB000D01F1D /* ViewModel */,
+				FF6532C52420AFB000D01F1D /* Model */,
+			);
+			path = "UISegmented 例子";
+			sourceTree = "<group>";
+		};
+		FF6532C42420AFAF00D01F1D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532C12420AFA900D01F1D /* SegmentedViewController.h */,
+				FF6532C22420AFA900D01F1D /* SegmentedViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FF6532C52420AFB000D01F1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532CD2420AFE000D01F1D /* SegmentedModel.h */,
+				FF6532CE2420AFE000D01F1D /* SegmentedModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF6532C62420AFB000D01F1D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF6532C72420AFB000D01F1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532C82420AFC700D01F1D /* SegmentedView.h */,
+				FF6532C92420AFC700D01F1D /* SegmentedView.m */,
+				FF6532CB2420AFD000D01F1D /* SegmentedView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF6532D12420B45700D01F1D /* 数组 例子 */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532D52420B46F00D01F1D /* ViewController */,
+				FF6532D42420B46F00D01F1D /* View */,
+				FF6532D72420B46F00D01F1D /* ViewModel */,
+				FF6532D62420B46F00D01F1D /* Model */,
+			);
+			path = "数组 例子";
+			sourceTree = "<group>";
+		};
+		FF6532D42420B46F00D01F1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532DB2420B48F00D01F1D /* ArrayView.h */,
+				FF6532DC2420B48F00D01F1D /* ArrayView.m */,
+				FF6532E12420B58700D01F1D /* ArrayView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF6532D52420B46F00D01F1D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532D82420B48200D01F1D /* ArrayViewController.h */,
+				FF6532D92420B48200D01F1D /* ArrayViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FF6532D62420B46F00D01F1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF6532DE2420B4B000D01F1D /* ArrayModel.h */,
+				FF6532DF2420B4B000D01F1D /* ArrayModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF6532D72420B46F00D01F1D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FF90E1A7241F615F00BCA018 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +483,7 @@
 				FF90E321241F83E200BCA018 /* Utils */,
 				FF90E27F241F774600BCA018 /* Category */,
 				FF90E2F9241F774B00BCA018 /* Project */,
+				FF65329B2420A31800D01F1D /* Resource */,
 				FF90E2FA241F775A00BCA018 /* Other */,
 			);
 			path = DVDataBindDemo;
@@ -227,6 +512,10 @@
 				FF90E303241F7AA600BCA018 /* MainViewController */,
 				FF90E27B241F751C00BCA018 /* UISwitch 例子 */,
 				FF90E27A241F751A00BCA018 /* UITextField 例子 */,
+				FF65328B24208F6A00D01F1D /* UIImageView 例子 */,
+				FF6532AD2420A6B600D01F1D /* UISlider 例子 */,
+				FF6532C02420AF6E00D01F1D /* UISegmented 例子 */,
+				FF6532D12420B45700D01F1D /* 数组 例子 */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -234,6 +523,10 @@
 		FF90E27A241F751A00BCA018 /* UITextField 例子 */ = {
 			isa = PBXGroup;
 			children = (
+				FF65327E2420738800D01F1D /* ViewController */,
+				FF65327D2420738800D01F1D /* View */,
+				FF65327F2420738800D01F1D /* ViewModel */,
+				FF65327C2420738800D01F1D /* Model */,
 			);
 			path = "UITextField 例子";
 			sourceTree = "<group>";
@@ -572,8 +865,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF90E1C3241F616100BCA018 /* LaunchScreen.storyboard in Resources */,
+				FF6532CC2420AFD000D01F1D /* SegmentedView.xib in Resources */,
+				FF65329724209F6B00D01F1D /* ImageView.xib in Resources */,
 				FF653265242058F800D01F1D /* SwitchView.xib in Resources */,
+				FF653287242073C400D01F1D /* TextFieldView.xib in Resources */,
 				FF90E1C0241F616100BCA018 /* Assets.xcassets in Resources */,
+				FF6532B92420A72600D01F1D /* SliderView.xib in Resources */,
+				FF6532E22420B58700D01F1D /* ArrayView.xib in Resources */,
+				FF65329F2420A4F800D01F1D /* icon-dog.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,13 +884,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF90E339241F845300BCA018 /* NSObject+Runtime_Method.m in Sources */,
+				FF6532B72420A71500D01F1D /* SliderView.m in Sources */,
 				FF90E2D5241F774700BCA018 /* UINavigationController+Common.m in Sources */,
 				FF6532682420591A00D01F1D /* SwitchModel.m in Sources */,
 				FF90E27E241F765E00BCA018 /* AppDelegate+UISetting.m in Sources */,
 				FF90E33C241F845300BCA018 /* DVRuntimeObjectModel.m in Sources */,
+				FF65328A2420793600D01F1D /* TextFieldModel.m in Sources */,
+				FF6532822420739D00D01F1D /* TextFieldViewController.m in Sources */,
 				FF90E2D3241F774700BCA018 /* UIColor+BaseColor.m in Sources */,
 				FF90E274241F750400BCA018 /* RootNavigationController.m in Sources */,
+				FF65329A2420A1A700D01F1D /* ImageModel.m in Sources */,
 				FF653260242058C700D01F1D /* SwitchViewController.m in Sources */,
+				FF65329224209F5700D01F1D /* ImageViewController.m in Sources */,
 				FF90E2D2241F774700BCA018 /* UITableView+Common.m in Sources */,
 				FF90E33A241F845300BCA018 /* NSObject+Runtime_VAR.m in Sources */,
 				FF90E348241F865400BCA018 /* DVInfo.m in Sources */,
@@ -601,25 +905,35 @@
 				FF90E2E1241F774700BCA018 /* UILabel+Common.m in Sources */,
 				FF90E2D4241F774700BCA018 /* UIColor+Common.m in Sources */,
 				FF653263242058E800D01F1D /* SwitchView.m in Sources */,
+				FF6532BC2420A82300D01F1D /* SliderModel.m in Sources */,
 				FF90E2D8241F774700BCA018 /* UIView+Common.m in Sources */,
+				FF6532CF2420AFE000D01F1D /* SegmentedModel.m in Sources */,
 				FF90E1B5241F615F00BCA018 /* AppDelegate.m in Sources */,
 				FF90E2DE241F774700BCA018 /* UIPanGestureRecognizer+Common.m in Sources */,
+				FF65329524209F6300D01F1D /* ImageView.m in Sources */,
 				FF90E2DA241F774700BCA018 /* UIButton+Common.m in Sources */,
+				FF6532B02420A6EC00D01F1D /* SliderViewController.m in Sources */,
+				FF6532E02420B4B000D01F1D /* ArrayModel.m in Sources */,
+				FF6532DA2420B48200D01F1D /* ArrayViewController.m in Sources */,
+				FF6532C32420AFA900D01F1D /* SegmentedViewController.m in Sources */,
 				FF90E2E3241F774700BCA018 /* UITabBarController+Common.m in Sources */,
 				FF90E277241F751200BCA018 /* MainViewController.m in Sources */,
 				FF90E30A241F7B4100BCA018 /* MainTableView.m in Sources */,
 				FF90E1C6241F616200BCA018 /* main.m in Sources */,
 				FF90E324241F83EF00BCA018 /* DVFrame.m in Sources */,
 				FF90E2DC241F774700BCA018 /* UICollectionView+Common.m in Sources */,
+				FF6532DD2420B48F00D01F1D /* ArrayView.m in Sources */,
 				FF90E35C241F869B00BCA018 /* DVAPPManager.m in Sources */,
 				FF90E30D241F7DC800BCA018 /* MainViewModel.m in Sources */,
 				FF90E338241F845300BCA018 /* NSObject+Runtime_Class.m in Sources */,
 				FF90E2E0241F774700BCA018 /* UIImage+Common.m in Sources */,
 				FF90E2DB241F774700BCA018 /* UIViewController+Common.m in Sources */,
 				FF90E345241F85ED00BCA018 /* AppDelegate+Notification.m in Sources */,
+				FF653285242073BA00D01F1D /* TextFieldView.m in Sources */,
 				FF90E2DD241F774700BCA018 /* UITextField+Common.m in Sources */,
 				FF90E33B241F845300BCA018 /* DVRuntime.m in Sources */,
 				FF90E2D9241F774700BCA018 /* UIToolbar+Common.m in Sources */,
+				FF6532CA2420AFC700D01F1D /* SegmentedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

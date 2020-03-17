@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SliderViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="6Ro-w3-oca"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SliderView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPm-q3-bxM">
+                    <rect key="frame" x="186" y="84" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="t1E-AI-yGy">
+                    <rect key="frame" x="18" y="124.5" width="378" height="31"/>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVM-DO-FKC">
+                    <rect key="frame" x="20" y="236.5" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="qyS-YP-Jvu"/>
+                    </constraints>
+                    <state key="normal" title="点击将model的sliderValue 为50"/>
+                </button>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kNU-gI-10e">
+                    <rect key="frame" x="20" y="194.5" width="374" height="2"/>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="t1E-AI-yGy" firstAttribute="top" secondItem="jPm-q3-bxM" secondAttribute="bottom" constant="20" id="5UW-Vt-0Vl"/>
+                <constraint firstItem="fVM-DO-FKC" firstAttribute="top" secondItem="kNU-gI-10e" secondAttribute="bottom" constant="40" id="HAO-Rl-qnz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fVM-DO-FKC" secondAttribute="trailing" constant="20" id="HQK-Fq-w5c"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="t1E-AI-yGy" secondAttribute="trailing" constant="20" id="Rqa-op-4Gm"/>
+                <constraint firstItem="kNU-gI-10e" firstAttribute="top" secondItem="t1E-AI-yGy" secondAttribute="bottom" constant="40" id="WWq-Zm-iQG"/>
+                <constraint firstItem="jPm-q3-bxM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XZ5-1i-TFE"/>
+                <constraint firstItem="jPm-q3-bxM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="Z6j-Ki-UUG"/>
+                <constraint firstItem="kNU-gI-10e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ZI1-tN-Rg1"/>
+                <constraint firstItem="fVM-DO-FKC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="bk8-UD-RZS"/>
+                <constraint firstItem="t1E-AI-yGy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="br4-do-jbO"/>
+                <constraint firstAttribute="trailing" secondItem="kNU-gI-10e" secondAttribute="trailing" constant="20" id="f2v-Bp-UeH"/>
+                <constraint firstItem="t1E-AI-yGy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="uCH-Wy-Cfj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnChangeValue" destination="fVM-DO-FKC" id="2Gi-pr-NT5"/>
+                <outlet property="lblTitle" destination="jPm-q3-bxM" id="vtU-Ae-F4e"/>
+                <outlet property="progressView" destination="kNU-gI-10e" id="xrt-Ep-7Vz"/>
+                <outlet property="slider" destination="t1E-AI-yGy" id="Kci-kJ-T7g"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="87.723214285714278"/>
+        </view>
+    </objects>
+</document>

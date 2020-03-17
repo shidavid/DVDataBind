@@ -1,5 +1,5 @@
 //
-//  SwitchModel.h
+//  TextFieldModel.h
 //  DVDataBindDemo
 //
 //  Created by mlgPro on 2020/3/17.
@@ -10,9 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SwitchModel : NSObject
+@interface TextFieldModel : NSObject
 
-@property(nonatomic, assign) BOOL isON;
+@property(nonatomic, assign) int num;
+@property(nonatomic, copy) NSString *text;
 
 @end
 

@@ -368,11 +368,13 @@
     }
     
     NSString *keyPath = obsModel.keyPath;
-    id oldValue = obsModel.oldValue;
+    id oldValue = (obsModel.propertyType == DBPropertyType_NSString ? obsModel.oldString : obsModel.oldValue);
     id newValue = [ctrl valueForKey:obsModel.keyPath];
     
     
     if ([self filterUIWithObject:ctrl keyPath:keyPath oldValue:oldValue newValue:newValue]) {
+        obsModel.oldValue = newValue;
+        if (obsModel.propertyType == DBPropertyType_NSString) obsModel.oldString = newValue;
         [self updateValue:newValue fromObject:ctrl fromKeyPath:obsModel.keyPath];
     }
 }
@@ -421,11 +423,9 @@
 
 #pragma mark - <-- Value Update -->
 - (id)convertValue:(id)value
-          toTarget:(NSObject *)target
-           keyPath:(NSString *)keyPath
+        targetType:(DBPropertyType)targetType
              isNot:(BOOL)isNot {
     
-    DBPropertyType targetType = [target db_getDBPropertyTypeWithName:keyPath];
     id tempValue = value;
         
     if ((targetType & DBPropertyType_NSNumber) == DBPropertyType_NSNumber) {
@@ -442,7 +442,9 @@
         }
     }
     else if (targetType == DBPropertyType_NSString) {
-        tempValue = [(NSNumber *)value stringValue];
+        if ([value isKindOfClass:[NSNumber class]]) {
+            tempValue = [(NSNumber *)value stringValue];
+        }
     }
     
     return tempValue;
@@ -461,6 +463,7 @@
         if (!obsModel) continue;
         
         id target = obsModel.target;
+        DBPropertyType targetType = obsModel.propertyType;
         NSString *keyPaths = obsModel.keyPath;
         DVDataBindType outDbType = (obsModel.dbType & DVDataBindType_OUT);
         DVDataBindType notDbTyoe = (obsModel.dbType & DVDataBindType_NOT);
@@ -478,25 +481,35 @@
             
             ((NSObject *)target).db_isDidChanged = YES;
             
+            
             id tempNewValue = newValue;
+            BOOL isNot = (notDbTyoe == DVDataBindType_NOT);
+            
             if (obsModel.convertBlock) {
-                tempNewValue = obsModel.convertBlock(newValue);
+                tempNewValue = [self convertValue:tempNewValue targetType:targetType isNot:YES];
+                tempNewValue = obsModel.convertBlock(tempNewValue);
+            } else {
+                tempNewValue = [self convertValue:tempNewValue targetType:targetType isNot:isNot];
             }
             
-            BOOL isNot = (notDbTyoe == DVDataBindType_NOT);
-            tempNewValue = [self convertValue:tempNewValue
-                                     toTarget:target
-                                      keyPath:keyPaths
-                                        isNot:isNot];
-                
+            if ([tempNewValue isKindOfClass:[NSNull class]]) tempNewValue = nil;
+            
+            if (targetType == DBPropertyType_NSString) obsModel.oldString = tempNewValue;
             obsModel.oldValue = tempNewValue;
             [target setValue:tempNewValue forKey:keyPaths];
         }
         else if (modelType == DVDataBindObserverModelType_Array) {
+            
             NSMutableArray *array = (NSMutableArray *)[obsModel.target valueForKey:obsModel.keyPath];
+            
             if (array && obsModel.index < array.count && array[obsModel.index] != newValue) {
-                obsModel.oldValue = newValue;
-                array[obsModel.index] = newValue;
+                
+                id tempNewValue = newValue;
+                tempNewValue = [self convertValue:tempNewValue targetType:targetType isNot:YES];
+                
+                if ([tempNewValue isKindOfClass:[NSNull class]]) tempNewValue = nil;
+                obsModel.oldValue = tempNewValue;
+                array[obsModel.index] = tempNewValue;
             }
         }
     }

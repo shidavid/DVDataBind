@@ -1,5 +1,5 @@
 //
-//  SwitchModel.h
+//  ArrayModel.h
 //  DVDataBindDemo
 //
 //  Created by mlgPro on 2020/3/17.
@@ -10,9 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SwitchModel : NSObject
+@interface ArrayModel : NSObject
 
-@property(nonatomic, assign) BOOL isON;
+@property(nonatomic, strong) NSMutableArray *array;
 
 @end
 

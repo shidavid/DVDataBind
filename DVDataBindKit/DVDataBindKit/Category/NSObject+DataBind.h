@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, copy, readonly) NSString *db_Hash;
 
+/// 获取属性property类型, 只能对于对象
+@property(nonatomic, assign, readonly) DBPropertyType db_propertyType;
+
 
 /// 获取属性property类型, 任意类型
 - (DBPropertyType)db_getDBPropertyTypeWithName:(NSString *)propertyName;
