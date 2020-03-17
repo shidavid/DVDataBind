@@ -12,10 +12,7 @@
 
 - (NSDictionary<NSString *,NSString *> *)tableItems {
     return @{
-        @"双向数据绑定" : @"",
-        @"" : @"",
-        @"" : @"",
-        @"" : @"",
+        @"UISwitch 例子" : @"SwitchViewController",
     };
 }
 

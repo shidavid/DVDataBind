@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF653260242058C700D01F1D /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF65325F242058C700D01F1D /* SwitchViewController.m */; };
+		FF653263242058E800D01F1D /* SwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF653262242058E800D01F1D /* SwitchView.m */; };
+		FF653265242058F800D01F1D /* SwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF653264242058F800D01F1D /* SwitchView.xib */; };
+		FF6532682420591A00D01F1D /* SwitchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532672420591A00D01F1D /* SwitchModel.m */; };
 		FF90E1B5241F615F00BCA018 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E1B4241F615F00BCA018 /* AppDelegate.m */; };
 		FF90E1C0241F616100BCA018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90E1BF241F616100BCA018 /* Assets.xcassets */; };
 		FF90E1C3241F616100BCA018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF90E1C1241F616100BCA018 /* LaunchScreen.storyboard */; };
@@ -33,10 +37,6 @@
 		FF90E2E3241F774700BCA018 /* UITabBarController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E2A4241F774600BCA018 /* UITabBarController+Common.m */; };
 		FF90E30A241F7B4100BCA018 /* MainTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E309241F7B4100BCA018 /* MainTableView.m */; };
 		FF90E30D241F7DC800BCA018 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E30C241F7DC800BCA018 /* MainViewModel.m */; };
-		FF90E318241F82BF00BCA018 /* OneOnOneViewontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E317241F82BF00BCA018 /* OneOnOneViewontroller.m */; };
-		FF90E31B241F82D000BCA018 /* OneOnOneView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E31A241F82D000BCA018 /* OneOnOneView.m */; };
-		FF90E31D241F82D800BCA018 /* OneOnOneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF90E31C241F82D800BCA018 /* OneOnOneView.xib */; };
-		FF90E320241F82FE00BCA018 /* OneOnOneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E31F241F82FE00BCA018 /* OneOnOneModel.m */; };
 		FF90E324241F83EF00BCA018 /* DVFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E322241F83EF00BCA018 /* DVFrame.m */; };
 		FF90E329241F843D00BCA018 /* UIViewController+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E328241F843D00BCA018 /* UIViewController+AOP.m */; };
 		FF90E338241F845300BCA018 /* NSObject+Runtime_Class.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E32C241F845300BCA018 /* NSObject+Runtime_Class.m */; };
@@ -75,6 +75,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF65325E242058C700D01F1D /* SwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
+		FF65325F242058C700D01F1D /* SwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
+		FF653261242058E800D01F1D /* SwitchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchView.h; sourceTree = "<group>"; };
+		FF653262242058E800D01F1D /* SwitchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchView.m; sourceTree = "<group>"; };
+		FF653264242058F800D01F1D /* SwitchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchView.xib; sourceTree = "<group>"; };
+		FF6532662420591A00D01F1D /* SwitchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchModel.h; sourceTree = "<group>"; };
+		FF6532672420591A00D01F1D /* SwitchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchModel.m; sourceTree = "<group>"; };
 		FF90E1B0241F615F00BCA018 /* DVDataBindDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVDataBindDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF90E1B3241F615F00BCA018 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF90E1B4241F615F00BCA018 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,13 +132,6 @@
 		FF90E309241F7B4100BCA018 /* MainTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableView.m; sourceTree = "<group>"; };
 		FF90E30B241F7DC800BCA018 /* MainViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewModel.h; sourceTree = "<group>"; };
 		FF90E30C241F7DC800BCA018 /* MainViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewModel.m; sourceTree = "<group>"; };
-		FF90E316241F82BF00BCA018 /* OneOnOneViewontroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneOnOneViewontroller.h; sourceTree = "<group>"; };
-		FF90E317241F82BF00BCA018 /* OneOnOneViewontroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneOnOneViewontroller.m; sourceTree = "<group>"; };
-		FF90E319241F82D000BCA018 /* OneOnOneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneOnOneView.h; sourceTree = "<group>"; };
-		FF90E31A241F82D000BCA018 /* OneOnOneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneOnOneView.m; sourceTree = "<group>"; };
-		FF90E31C241F82D800BCA018 /* OneOnOneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneOnOneView.xib; sourceTree = "<group>"; };
-		FF90E31E241F82FE00BCA018 /* OneOnOneModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneOnOneModel.h; sourceTree = "<group>"; };
-		FF90E31F241F82FE00BCA018 /* OneOnOneModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneOnOneModel.m; sourceTree = "<group>"; };
 		FF90E322241F83EF00BCA018 /* DVFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVFrame.m; sourceTree = "<group>"; };
 		FF90E323241F83EF00BCA018 /* DVFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVFrame.h; sourceTree = "<group>"; };
 		FF90E326241F843D00BCA018 /* UIViewController+AOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AOP.h"; sourceTree = "<group>"; };
@@ -225,20 +225,20 @@
 				FF90E272241F750400BCA018 /* RootNavigationController.h */,
 				FF90E273241F750400BCA018 /* RootNavigationController.m */,
 				FF90E303241F7AA600BCA018 /* MainViewController */,
-				FF90E27B241F751C00BCA018 /* 双向绑定 例子 */,
-				FF90E27A241F751A00BCA018 /* 数组某一位绑定 例子 */,
+				FF90E27B241F751C00BCA018 /* UISwitch 例子 */,
+				FF90E27A241F751A00BCA018 /* UITextField 例子 */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		FF90E27A241F751A00BCA018 /* 数组某一位绑定 例子 */ = {
+		FF90E27A241F751A00BCA018 /* UITextField 例子 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "数组某一位绑定 例子";
+			path = "UITextField 例子";
 			sourceTree = "<group>";
 		};
-		FF90E27B241F751C00BCA018 /* 双向绑定 例子 */ = {
+		FF90E27B241F751C00BCA018 /* UISwitch 例子 */ = {
 			isa = PBXGroup;
 			children = (
 				FF90E312241F825000BCA018 /* ViewController */,
@@ -246,7 +246,7 @@
 				FF90E313241F825000BCA018 /* ViewModel */,
 				FF90E314241F825000BCA018 /* Model */,
 			);
-			path = "双向绑定 例子";
+			path = "UISwitch 例子";
 			sourceTree = "<group>";
 		};
 		FF90E27F241F774600BCA018 /* Category */ = {
@@ -382,8 +382,8 @@
 		FF90E312241F825000BCA018 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FF90E316241F82BF00BCA018 /* OneOnOneViewontroller.h */,
-				FF90E317241F82BF00BCA018 /* OneOnOneViewontroller.m */,
+				FF65325E242058C700D01F1D /* SwitchViewController.h */,
+				FF65325F242058C700D01F1D /* SwitchViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -398,8 +398,8 @@
 		FF90E314241F825000BCA018 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FF90E31E241F82FE00BCA018 /* OneOnOneModel.h */,
-				FF90E31F241F82FE00BCA018 /* OneOnOneModel.m */,
+				FF6532662420591A00D01F1D /* SwitchModel.h */,
+				FF6532672420591A00D01F1D /* SwitchModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -407,9 +407,9 @@
 		FF90E315241F825000BCA018 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FF90E319241F82D000BCA018 /* OneOnOneView.h */,
-				FF90E31A241F82D000BCA018 /* OneOnOneView.m */,
-				FF90E31C241F82D800BCA018 /* OneOnOneView.xib */,
+				FF653261242058E800D01F1D /* SwitchView.h */,
+				FF653262242058E800D01F1D /* SwitchView.m */,
+				FF653264242058F800D01F1D /* SwitchView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -571,8 +571,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF90E31D241F82D800BCA018 /* OneOnOneView.xib in Resources */,
 				FF90E1C3241F616100BCA018 /* LaunchScreen.storyboard in Resources */,
+				FF653265242058F800D01F1D /* SwitchView.xib in Resources */,
 				FF90E1C0241F616100BCA018 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,25 +586,25 @@
 			files = (
 				FF90E339241F845300BCA018 /* NSObject+Runtime_Method.m in Sources */,
 				FF90E2D5241F774700BCA018 /* UINavigationController+Common.m in Sources */,
+				FF6532682420591A00D01F1D /* SwitchModel.m in Sources */,
 				FF90E27E241F765E00BCA018 /* AppDelegate+UISetting.m in Sources */,
 				FF90E33C241F845300BCA018 /* DVRuntimeObjectModel.m in Sources */,
 				FF90E2D3241F774700BCA018 /* UIColor+BaseColor.m in Sources */,
 				FF90E274241F750400BCA018 /* RootNavigationController.m in Sources */,
+				FF653260242058C700D01F1D /* SwitchViewController.m in Sources */,
 				FF90E2D2241F774700BCA018 /* UITableView+Common.m in Sources */,
 				FF90E33A241F845300BCA018 /* NSObject+Runtime_VAR.m in Sources */,
-				FF90E31B241F82D000BCA018 /* OneOnOneView.m in Sources */,
 				FF90E348241F865400BCA018 /* DVInfo.m in Sources */,
 				FF90E2D6241F774700BCA018 /* UIBarButtonItem+Common.m in Sources */,
 				FF90E35E241F869B00BCA018 /* DVManager.m in Sources */,
 				FF90E329241F843D00BCA018 /* UIViewController+AOP.m in Sources */,
 				FF90E2E1241F774700BCA018 /* UILabel+Common.m in Sources */,
 				FF90E2D4241F774700BCA018 /* UIColor+Common.m in Sources */,
+				FF653263242058E800D01F1D /* SwitchView.m in Sources */,
 				FF90E2D8241F774700BCA018 /* UIView+Common.m in Sources */,
-				FF90E320241F82FE00BCA018 /* OneOnOneModel.m in Sources */,
 				FF90E1B5241F615F00BCA018 /* AppDelegate.m in Sources */,
 				FF90E2DE241F774700BCA018 /* UIPanGestureRecognizer+Common.m in Sources */,
 				FF90E2DA241F774700BCA018 /* UIButton+Common.m in Sources */,
-				FF90E318241F82BF00BCA018 /* OneOnOneViewontroller.m in Sources */,
 				FF90E2E3241F774700BCA018 /* UITabBarController+Common.m in Sources */,
 				FF90E277241F751200BCA018 /* MainViewController.m in Sources */,
 				FF90E30A241F7B4100BCA018 /* MainTableView.m in Sources */,
@@ -763,6 +763,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvkit.until.databind.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -785,6 +789,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvkit.until.databind.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -100,7 +100,7 @@
     }
     
     UIViewController *vc = DVManager.app.currentViewController;
-    UIView *txtField = (UIView *)self.currentResponder;
+    UIView *txtField = (UIView *)[self.window performSelector:@selector(firstResponder)];
     
     if (vc && txtField ){ //}&& (beginHeight == endHeight)) {
         CGFloat kbMinY = DVFrame.height - endHeight;
