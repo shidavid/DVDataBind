@@ -73,7 +73,7 @@
     
     DVDataBind
     ._in_ui(self.loginView.btnLogin, @"highlighted", UIControlEventTouchUpInside)
-    ._out_key_any(@"com.login", ^{
+    ._out_key_any(@"login.btnLogin.login", ^{
         [weakSelf.loginViewModel login];
     });
 }
