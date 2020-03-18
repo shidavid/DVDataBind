@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5h-tM-Ggd">
-                    <rect key="frame" x="40" y="140" width="334" height="40"/>
+                    <rect key="frame" x="40" y="100" width="334" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="YaG-nx-RoV"/>
                     </constraints>
@@ -26,7 +26,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n0l-Ce-CMU">
-                    <rect key="frame" x="40" y="200" width="334" height="40"/>
+                    <rect key="frame" x="40" y="160" width="334" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="5wS-u2-ZNx"/>
                     </constraints>
@@ -34,7 +34,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTc-fN-SuJ">
-                    <rect key="frame" x="40" y="360" width="334" height="50"/>
+                    <rect key="frame" x="40" y="260" width="334" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Cuy-o9-OTk"/>
                     </constraints>
@@ -47,8 +47,8 @@
                 <constraint firstItem="r5h-tM-Ggd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="7qk-9M-xys"/>
                 <constraint firstAttribute="trailing" secondItem="cTc-fN-SuJ" secondAttribute="trailing" constant="40" id="CwT-qy-7yX"/>
                 <constraint firstItem="n0l-Ce-CMU" firstAttribute="top" secondItem="r5h-tM-Ggd" secondAttribute="bottom" constant="20" id="F8F-dM-0nB"/>
-                <constraint firstItem="cTc-fN-SuJ" firstAttribute="top" secondItem="n0l-Ce-CMU" secondAttribute="bottom" constant="120" id="KOP-7c-8VH"/>
-                <constraint firstItem="r5h-tM-Ggd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="140" id="Qd1-Uj-5fK"/>
+                <constraint firstItem="cTc-fN-SuJ" firstAttribute="top" secondItem="n0l-Ce-CMU" secondAttribute="bottom" constant="60" id="KOP-7c-8VH"/>
+                <constraint firstItem="r5h-tM-Ggd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="Qd1-Uj-5fK"/>
                 <constraint firstItem="cTc-fN-SuJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="RrS-Fu-EKA"/>
                 <constraint firstItem="n0l-Ce-CMU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="ht8-gB-os1"/>
                 <constraint firstAttribute="trailing" secondItem="n0l-Ce-CMU" secondAttribute="trailing" constant="40" id="pnr-08-2lx"/>

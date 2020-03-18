@@ -45,6 +45,7 @@
     self.passwordText.leftViewMode = UITextFieldViewModeAlways;
     self.passwordText.secureTextEntry = YES;
     
+    self.btnLogin.enabled = NO;
     self.btnLogin.layer.cornerRadius = 8;
     self.btnLogin.clipsToBounds = YES;
     self.btnLogin.titleColor = [UIColor Blue];

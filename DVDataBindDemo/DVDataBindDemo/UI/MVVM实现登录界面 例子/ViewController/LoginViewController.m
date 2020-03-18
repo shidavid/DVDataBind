@@ -50,7 +50,11 @@
     ._out(self.loginModel, @"userName")
     ._filter(^BOOL(NSString *text) {
         return text.length <= 15;
+    })
+    ._out_key_any(@"login.userName.text", ^{
+        weakSelf.loginView.btnLogin.enabled = [weakSelf.loginViewModel btnLoginEnable];
     });
+    
     
     DVDataBind
     ._in_ui(self.loginView.passwordText, @"text", UIControlEventEditingChanged)
@@ -61,7 +65,11 @@
     ._filter(^BOOL(NSString *text) {
         NSString *tempText = [NSString stringWithUTF8String:text.UTF8String];
         return tempText.length <= 15;
+    })
+    ._out_key_any(@"login.passwordText.text", ^{
+        weakSelf.loginView.btnLogin.enabled = [weakSelf.loginViewModel btnLoginEnable];
     });
+    
     
     DVDataBind
     ._in_ui(self.loginView.btnLogin, @"highlighted", UIControlEventTouchUpInside)
@@ -69,5 +77,6 @@
         [weakSelf.loginViewModel login];
     });
 }
+
 
 @end
