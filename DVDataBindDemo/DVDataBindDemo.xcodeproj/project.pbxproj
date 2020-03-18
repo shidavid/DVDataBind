@@ -32,6 +32,7 @@
 		FF6532DD2420B48F00D01F1D /* ArrayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532DC2420B48F00D01F1D /* ArrayView.m */; };
 		FF6532E02420B4B000D01F1D /* ArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6532DF2420B4B000D01F1D /* ArrayModel.m */; };
 		FF6532E22420B58700D01F1D /* ArrayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6532E12420B58700D01F1D /* ArrayView.xib */; };
+		FF6532F92421EF9400D01F1D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FF6532F62421EF9400D01F1D /* README.md */; };
 		FF90E1B5241F615F00BCA018 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E1B4241F615F00BCA018 /* AppDelegate.m */; };
 		FF90E1C0241F616100BCA018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90E1BF241F616100BCA018 /* Assets.xcassets */; };
 		FF90E1C3241F616100BCA018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF90E1C1241F616100BCA018 /* LaunchScreen.storyboard */; };
@@ -139,6 +140,7 @@
 		FF6532DE2420B4B000D01F1D /* ArrayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayModel.h; sourceTree = "<group>"; };
 		FF6532DF2420B4B000D01F1D /* ArrayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayModel.m; sourceTree = "<group>"; };
 		FF6532E12420B58700D01F1D /* ArrayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrayView.xib; sourceTree = "<group>"; };
+		FF6532F62421EF9400D01F1D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
 		FF90E1B0241F615F00BCA018 /* DVDataBindDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVDataBindDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF90E1B3241F615F00BCA018 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF90E1B4241F615F00BCA018 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -601,6 +603,7 @@
 		FF90E2FA241F775A00BCA018 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				FF6532F62421EF9400D01F1D /* README.md */,
 				FF90E1C5241F616200BCA018 /* main.m */,
 			);
 			path = Other;
@@ -866,6 +869,7 @@
 			files = (
 				FF90E1C3241F616100BCA018 /* LaunchScreen.storyboard in Resources */,
 				FF6532CC2420AFD000D01F1D /* SegmentedView.xib in Resources */,
+				FF6532F92421EF9400D01F1D /* README.md in Resources */,
 				FF65329724209F6B00D01F1D /* ImageView.xib in Resources */,
 				FF653265242058F800D01F1D /* SwitchView.xib in Resources */,
 				FF653287242073C400D01F1D /* TextFieldView.xib in Resources */,
