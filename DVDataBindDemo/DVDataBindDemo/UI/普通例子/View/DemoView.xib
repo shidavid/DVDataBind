@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="T5a-67-1NS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DemoView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Se4-0x-sZV">
+                    <rect key="frame" x="20" y="124" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bob-wT-4I1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1s8-3e-VBi">
+                    <rect key="frame" x="20" y="64" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="PAo-fK-xks"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpL-ar-v6M">
+                    <rect key="frame" x="20" y="184" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Tk1-UP-Mxh"/>
+                    </constraints>
+                    <state key="normal" title="点击model.text 设为&quot;Hello World&quot;"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jpL-ar-v6M" secondAttribute="trailing" constant="20" id="3MI-17-Lq5"/>
+                <constraint firstItem="1s8-3e-VBi" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="7ae-pD-1ya"/>
+                <constraint firstItem="jpL-ar-v6M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="7g9-DL-wVI"/>
+                <constraint firstItem="Se4-0x-sZV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ICQ-ev-Xha"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Se4-0x-sZV" secondAttribute="trailing" constant="20" id="KFc-8J-QYY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1s8-3e-VBi" secondAttribute="trailing" constant="20" id="RUR-vR-lrR"/>
+                <constraint firstItem="jpL-ar-v6M" firstAttribute="top" secondItem="Se4-0x-sZV" secondAttribute="bottom" constant="20" id="Yco-cd-xAF"/>
+                <constraint firstItem="1s8-3e-VBi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="cWz-jU-Lck"/>
+                <constraint firstItem="Se4-0x-sZV" firstAttribute="top" secondItem="1s8-3e-VBi" secondAttribute="bottom" constant="20" id="y6y-qJ-UJa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="button" destination="jpL-ar-v6M" id="GbF-A5-DMs"/>
+                <outlet property="label" destination="1s8-3e-VBi" id="dBA-XM-6Qj"/>
+                <outlet property="textField" destination="Se4-0x-sZV" id="Zu4-RJ-nLu"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="87.723214285714278"/>
+        </view>
+    </objects>
+</document>

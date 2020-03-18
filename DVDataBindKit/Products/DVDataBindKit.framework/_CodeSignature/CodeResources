@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/DVDataBind.h</key>
 		<data>
-		TLkYOrMUDEXcWxLQdN97yKe7OWE=
+		TEK4qMfB/8ooTNWinUaW6EGC3KU=
 		</data>
 		<key>Headers/DVDataBindKit.h</key>
 		<data>
-		oLAY4SYbvFrREkPCDnzVsY4Hdqk=
+		uYW1O7f+DX3RfTYjKY0r6qHyz3k=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -27,22 +27,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TLkYOrMUDEXcWxLQdN97yKe7OWE=
+			TEK4qMfB/8ooTNWinUaW6EGC3KU=
 			</data>
 			<key>hash2</key>
 			<data>
-			fl3jfDG6fxi5TXrVpnK5g215yNZHUUZLOu2lJM36sxM=
+			md3TF2XEf2U149HCaNqN1eJuKQx+zso2qYIkfxvzlgY=
 			</data>
 		</dict>
 		<key>Headers/DVDataBindKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oLAY4SYbvFrREkPCDnzVsY4Hdqk=
+			uYW1O7f+DX3RfTYjKY0r6qHyz3k=
 			</data>
 			<key>hash2</key>
 			<data>
-			RTzjRiQOe2qiFZRPSLiwoKEIF09shhLS4Tu0Wn2Msvo=
+			jxM7UN8BeXYho5hkaCP/R/bnZnJjIBh4kx42BA4/WF8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

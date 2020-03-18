@@ -34,26 +34,12 @@
 
 - (void)initModels {
     self.arrayModel = [[ArrayModel alloc] init];
-    
     [self.arrayModel.array addObject:@""];
     [self.arrayModel.array addObject:@(0)];
 }
 
 - (void)bindData {
     __weak __typeof(self)weakSelf = self;
-    
-    /**
-     1）DVDataBind 必须用 in 或 inout 开头, 后面绑定先后顺序随便, 任意组合, 不影响结果
-     2）in 只发送新数据, inout 可接受和发送新数据, out 只接受新数据
-     3）字符串、整形、浮点型、布鲁尔类型 之间会自动转换, (除了对象类型，对象属性 必须类型一致)
-     4）无需手动解绑, 自动解绑和释放内存
-     
-     
-     (1) ._inout(self.textModel, @"num")
-     绑定 普通
-     第一个变量是 目标
-     第二个变量是 目标拥有的 属性名
-    */
     
     DVDataBind
     ._inout_ui(self.arrayView.textField1, @"text", UIControlEventEditingChanged)
@@ -71,7 +57,6 @@
         NSString *text = [value stringValue];
         NSLog(@"[ArrayViewController LOG]: array第1位 -> %@",text);
     });
-    
     
 
     [self.arrayView.btnChange1 addTarget:self

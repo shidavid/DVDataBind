@@ -39,25 +39,6 @@
 - (void)bindData {
     __weak __typeof(self)weakSelf = self;
     
-    
-    /**
-     1）DVDataBind 必须用 in 或 inout 开头, 后面绑定先后顺序随便, 任意组合, 不影响结果
-     2）in 只发送新数据, inout 可接受和发送新数据, out 只接受新数据
-     3）字符串、整形、浮点型、布鲁尔类型 之间会自动转换, (除了对象类型，对象属性 必须类型一致)
-     4）无需手动解绑, 自动解绑和释放内存
-     
-     
-     (1) ._inout(self.swModel, @"isON")
-     绑定 普通
-     第一个变量是 目标
-     第二个变量是 目标拥有的 属性名
-   
-     (2) ._inout_ui(self.swView.inoutSW1, @"on", UIControlEventValueChanged)
-     绑定 UI类
-     第一个变量是 目标
-     第二个变量是 目标 通过触发控件事件会产生数据变化的 属性名
-     第三个变量是 控件事件
-    */
     DVDataBind
     ._inout(self.swModel, @"isON")
     ._in_ui(self.swView.inSW1, @"on", UIControlEventValueChanged)
@@ -66,7 +47,7 @@
     ._inout_ui(self.swView.inoutSW1, @"on", UIControlEventValueChanged)
     ._inout_ui(self.swView.inoutSW2, @"on", UIControlEventValueChanged)
     ._inout_ui(self.swView.inoutSW3, @"on", UIControlEventValueChanged)
-    ._out(self.swView.outSW1, @"on") // 因为这里只是改变enable属性，没有手动触发控件事件，不用控件事件
+    ._out(self.swView.outSW1, @"on")
     ._out(self.swView.outSW2, @"on")
     ._out(self.swView.outSW3, @"on")
     ._out_not(self.swView.notSW, @"on")

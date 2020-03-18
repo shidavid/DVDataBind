@@ -1,8 +1,7 @@
 //
 //  DVDataBindKit.h
-//  DVDataBindKit
 //
-//  Created by mlgPro on 2018/3/16.
+//  Created by David.Shi on 2018/3/16.
 //  Copyright © 2018 DVUntilKit. All rights reserved.
 //
 
@@ -14,8 +13,6 @@ FOUNDATION_EXPORT double DVDataBindKitVersionNumber;
 
 //! Project version string for DVDataBindKit.
 FOUNDATION_EXPORT const unsigned char DVDataBindKitVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <DVDataBindKit/PublicHeader.h>
 
 
 #import <DVDataBindKit/DVDataBind.h>
