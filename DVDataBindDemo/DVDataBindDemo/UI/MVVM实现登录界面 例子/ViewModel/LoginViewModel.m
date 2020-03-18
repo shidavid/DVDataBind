@@ -18,14 +18,8 @@
 }
 
 - (BOOL)btnLoginEnable {
-    BOOL enable = YES;
-    if (!self.loginModel.userName || self.loginModel.userName.length == 0) {
-        enable = NO;
-    }
-    else if (!self.loginModel.password || self.loginModel.password.length == 0) {
-        enable = NO;
-    }
-    return enable;
+    return (self.loginModel.userName && self.loginModel.userName.length > 0
+            && self.loginModel.password && self.loginModel.password.length > 0);
 }
 
 @end
