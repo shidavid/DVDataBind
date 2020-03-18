@@ -12,6 +12,7 @@
 
 - (NSDictionary<NSString *,NSString *> *)tableItems {
     return @{
+        @"MVVM 实现登录界面 例子" : @"LoginViewController",
         @"普通例子" : @"DemoViewController",
         @"UISwitch 例子" : @"SwitchViewController",
         @"UITextField 例子" : @"TextFieldViewController",

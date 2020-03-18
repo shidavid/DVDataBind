@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="aPP-Cu-ATw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5h-tM-Ggd">
+                    <rect key="frame" x="40" y="140" width="334" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="YaG-nx-RoV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n0l-Ce-CMU">
+                    <rect key="frame" x="40" y="200" width="334" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="5wS-u2-ZNx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTc-fN-SuJ">
+                    <rect key="frame" x="40" y="360" width="334" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Cuy-o9-OTk"/>
+                    </constraints>
+                    <state key="normal" title="登录"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="r5h-tM-Ggd" secondAttribute="trailing" constant="40" id="1YS-we-rsd"/>
+                <constraint firstItem="r5h-tM-Ggd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="7qk-9M-xys"/>
+                <constraint firstAttribute="trailing" secondItem="cTc-fN-SuJ" secondAttribute="trailing" constant="40" id="CwT-qy-7yX"/>
+                <constraint firstItem="n0l-Ce-CMU" firstAttribute="top" secondItem="r5h-tM-Ggd" secondAttribute="bottom" constant="20" id="F8F-dM-0nB"/>
+                <constraint firstItem="cTc-fN-SuJ" firstAttribute="top" secondItem="n0l-Ce-CMU" secondAttribute="bottom" constant="120" id="KOP-7c-8VH"/>
+                <constraint firstItem="r5h-tM-Ggd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="140" id="Qd1-Uj-5fK"/>
+                <constraint firstItem="cTc-fN-SuJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="RrS-Fu-EKA"/>
+                <constraint firstItem="n0l-Ce-CMU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="ht8-gB-os1"/>
+                <constraint firstAttribute="trailing" secondItem="n0l-Ce-CMU" secondAttribute="trailing" constant="40" id="pnr-08-2lx"/>
+            </constraints>
+            <connections>
+                <outlet property="btnLogin" destination="cTc-fN-SuJ" id="OBR-y4-6AQ"/>
+                <outlet property="passwordText" destination="n0l-Ce-CMU" id="Fvc-BR-Opn"/>
+                <outlet property="userNameText" destination="r5h-tM-Ggd" id="9Bu-in-EZx"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
+        </view>
+    </objects>
+</document>

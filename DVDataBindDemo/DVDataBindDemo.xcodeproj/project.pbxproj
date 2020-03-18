@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E60615624226915000D0E64 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E60615524226915000D0E64 /* LoginViewController.m */; };
+		3E60615924226925000D0E64 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E60615824226925000D0E64 /* LoginView.m */; };
+		3E60615C24226931000D0E64 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E60615B24226931000D0E64 /* LoginViewModel.m */; };
+		3E60615F2422693A000D0E64 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E60615E2422693A000D0E64 /* LoginModel.m */; };
+		3E6061612422698F000D0E64 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6061602422698F000D0E64 /* LoginView.xib */; };
+		3E60616924227035000D0E64 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E60616724227034000D0E64 /* password.png */; };
+		3E60616A24227035000D0E64 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E60616824227035000D0E64 /* user.png */; };
 		FF653260242058C700D01F1D /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF65325F242058C700D01F1D /* SwitchViewController.m */; };
 		FF653263242058E800D01F1D /* SwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF653262242058E800D01F1D /* SwitchView.m */; };
 		FF653265242058F800D01F1D /* SwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF653264242058F800D01F1D /* SwitchView.xib */; };
@@ -101,6 +108,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E60615424226915000D0E64 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3E60615524226915000D0E64 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3E60615724226925000D0E64 /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		3E60615824226925000D0E64 /* LoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		3E60615A24226931000D0E64 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		3E60615B24226931000D0E64 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		3E60615D2422693A000D0E64 /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		3E60615E2422693A000D0E64 /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		3E6061602422698F000D0E64 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		3E60616724227034000D0E64 /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
+		3E60616824227035000D0E64 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		FF65325E242058C700D01F1D /* SwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
 		FF65325F242058C700D01F1D /* SwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
 		FF653261242058E800D01F1D /* SwitchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchView.h; sourceTree = "<group>"; };
@@ -240,6 +258,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E60614D242268E3000D0E64 /* MVVM实现登录界面 例子 */ = {
+			isa = PBXGroup;
+			children = (
+				3E60615124226901000D0E64 /* ViewController */,
+				3E60615224226901000D0E64 /* View */,
+				3E60615324226902000D0E64 /* ViewModel */,
+				3E60615024226901000D0E64 /* Model */,
+			);
+			path = "MVVM实现登录界面 例子";
+			sourceTree = "<group>";
+		};
+		3E60615024226901000D0E64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E60615D2422693A000D0E64 /* LoginModel.h */,
+				3E60615E2422693A000D0E64 /* LoginModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E60615124226901000D0E64 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E60615424226915000D0E64 /* LoginViewController.h */,
+				3E60615524226915000D0E64 /* LoginViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3E60615224226901000D0E64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E60615724226925000D0E64 /* LoginView.h */,
+				3E60615824226925000D0E64 /* LoginView.m */,
+				3E6061602422698F000D0E64 /* LoginView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E60615324226902000D0E64 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3E60615A24226931000D0E64 /* LoginViewModel.h */,
+				3E60615B24226931000D0E64 /* LoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3E60616B2422703B000D0E64 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				3E60616724227034000D0E64 /* password.png */,
+				3E60616824227035000D0E64 /* user.png */,
+				FF65329E2420A4F800D01F1D /* icon-dog.jpg */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		FF65327C2420738800D01F1D /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,7 +400,7 @@
 		FF65329B2420A31800D01F1D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				FF65329E2420A4F800D01F1D /* icon-dog.jpg */,
+				3E60616B2422703B000D0E64 /* image */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -569,6 +645,7 @@
 				FF90E272241F750400BCA018 /* RootNavigationController.h */,
 				FF90E273241F750400BCA018 /* RootNavigationController.m */,
 				FF90E303241F7AA600BCA018 /* MainViewController */,
+				3E60614D242268E3000D0E64 /* MVVM实现登录界面 例子 */,
 				FF6532FA2422230C00D01F1D /* 普通例子 */,
 				FF90E27B241F751C00BCA018 /* UISwitch 例子 */,
 				FF90E27A241F751A00BCA018 /* UITextField 例子 */,
@@ -927,9 +1004,12 @@
 			files = (
 				FF90E1C3241F616100BCA018 /* LaunchScreen.storyboard in Resources */,
 				FF6532CC2420AFD000D01F1D /* SegmentedView.xib in Resources */,
+				3E6061612422698F000D0E64 /* LoginView.xib in Resources */,
 				FF6532F92421EF9400D01F1D /* README.md in Resources */,
+				3E60616A24227035000D0E64 /* user.png in Resources */,
 				FF65329724209F6B00D01F1D /* ImageView.xib in Resources */,
 				FF653265242058F800D01F1D /* SwitchView.xib in Resources */,
+				3E60616924227035000D0E64 /* password.png in Resources */,
 				FF653287242073C400D01F1D /* TextFieldView.xib in Resources */,
 				FF6533062422238700D01F1D /* DemoView.xib in Resources */,
 				FF90E1C0241F616100BCA018 /* Assets.xcassets in Resources */,
@@ -948,6 +1028,7 @@
 			files = (
 				FF90E339241F845300BCA018 /* NSObject+Runtime_Method.m in Sources */,
 				FF6532B72420A71500D01F1D /* SliderView.m in Sources */,
+				3E60615924226925000D0E64 /* LoginView.m in Sources */,
 				FF90E2D5241F774700BCA018 /* UINavigationController+Common.m in Sources */,
 				FF6532682420591A00D01F1D /* SwitchModel.m in Sources */,
 				FF90E27E241F765E00BCA018 /* AppDelegate+UISetting.m in Sources */,
@@ -955,12 +1036,15 @@
 				FF65328A2420793600D01F1D /* TextFieldModel.m in Sources */,
 				FF6532822420739D00D01F1D /* TextFieldViewController.m in Sources */,
 				FF90E2D3241F774700BCA018 /* UIColor+BaseColor.m in Sources */,
+				3E60615624226915000D0E64 /* LoginViewController.m in Sources */,
 				FF90E274241F750400BCA018 /* RootNavigationController.m in Sources */,
 				FF65329A2420A1A700D01F1D /* ImageModel.m in Sources */,
 				FF653260242058C700D01F1D /* SwitchViewController.m in Sources */,
 				FF65329224209F5700D01F1D /* ImageViewController.m in Sources */,
+				3E60615F2422693A000D0E64 /* LoginModel.m in Sources */,
 				FF90E2D2241F774700BCA018 /* UITableView+Common.m in Sources */,
 				FF90E33A241F845300BCA018 /* NSObject+Runtime_VAR.m in Sources */,
+				3E60615C24226931000D0E64 /* LoginViewModel.m in Sources */,
 				FF90E348241F865400BCA018 /* DVInfo.m in Sources */,
 				FF90E2D6241F774700BCA018 /* UIBarButtonItem+Common.m in Sources */,
 				FF90E35E241F869B00BCA018 /* DVManager.m in Sources */,
