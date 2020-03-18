@@ -49,7 +49,7 @@
     ._in_ui(self.loginView.userNameText, @"text", UIControlEventEditingChanged)
     ._out(self.loginModel, @"userName")
     ._filter(^BOOL(NSString *text) {
-        return text.length <= 15;
+        return [weakSelf.loginViewModel filterUserName:text];
     })
     ._out_key_any(@"login.userName.text", ^{
         weakSelf.loginView.btnLogin.enabled = [weakSelf.loginViewModel btnLoginEnable];
@@ -64,7 +64,7 @@
     })
     ._filter(^BOOL(NSString *text) {
         NSString *tempText = [NSString stringWithUTF8String:text.UTF8String];
-        return tempText.length <= 15;
+        return [weakSelf.loginViewModel filterPassword:tempText];
     })
     ._out_key_any(@"login.passwordText.text", ^{
         weakSelf.loginView.btnLogin.enabled = [weakSelf.loginViewModel btnLoginEnable];

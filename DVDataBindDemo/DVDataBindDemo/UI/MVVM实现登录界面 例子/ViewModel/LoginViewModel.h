@@ -15,9 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, weak) LoginModel *loginModel;
 
-- (void)login;
-
 - (BOOL)btnLoginEnable;
+
+- (BOOL)filterUserName:(NSString *)userName;
+
+- (BOOL)filterPassword:(NSString *)password;
+
+- (void)login;
 
 @end
 
