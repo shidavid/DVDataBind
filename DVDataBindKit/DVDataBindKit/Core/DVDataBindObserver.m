@@ -471,8 +471,7 @@
         
         if (!target || !keyPaths || outDbType != DVDataBindType_OUT) continue;
         
-        if (modelType == DVDataBindObserverModelType_Object
-            || modelType == DVDataBindObserverModelType_UI ) {
+        if (modelType == DVDataBindObserverModelType_Object || modelType == DVDataBindObserverModelType_UI ) {
             
             if (target == object && [keyPaths isEqualToString:keyPath]) continue;
             if ([target valueForKey:keyPaths] == newValue

@@ -48,16 +48,10 @@ typedef DVDataBind *_Nonnull(^DataBindFilterBlock)(DBBoolAnyBlock block);
  */
 @interface DVDataBind : NSObject
 
-#pragma mark - <-- Property -->
-/// 链码
-@property(nonatomic, copy, readonly) NSString *chainCode;
-
 
 #pragma mark - <-- 双向绑定 -->
 + (DataBindBlock)_inout;
 + (DataBindUIBlock)_inout_ui;
-+ (DataBindNotBlock)_inout_not;
-+ (DataBindUINotBlock)_inout_ui_not;
 + (DataBindConvertBlock)_inout_cv;
 + (DataBindUIConvertBlock)_inout_ui_cv;
 + (DataBindArrayBlock)_inout_arr;
@@ -65,8 +59,6 @@ typedef DVDataBind *_Nonnull(^DataBindFilterBlock)(DBBoolAnyBlock block);
 
 - (DataBindBlock)_inout;
 - (DataBindUIBlock)_inout_ui;
-- (DataBindNotBlock)_inout_not;
-- (DataBindUINotBlock)_inout_ui_not;
 - (DataBindConvertBlock)_inout_cv;
 - (DataBindUIConvertBlock)_inout_ui_cv;
 - (DataBindArrayBlock)_inout_arr;
@@ -75,30 +67,19 @@ typedef DVDataBind *_Nonnull(^DataBindFilterBlock)(DBBoolAnyBlock block);
 #pragma mark - <-- 单向绑定(数据更新,只发送新数据,不接受) -->
 + (DataBindBlock)_in;
 + (DataBindUIBlock)_in_ui;
-+ (DataBindNotBlock)_in_not;
-+ (DataBindUINotBlock)_in_ui_not;
-+ (DataBindConvertBlock)_in_cv;
-+ (DataBindUIConvertBlock)_in_ui_cv;
 + (DataBindArrayBlock)_in_arr;
 
 
 - (DataBindBlock)_in;
 - (DataBindUIBlock)_in_ui;
-- (DataBindNotBlock)_in_not;
-- (DataBindUINotBlock)_in_ui_not;
-- (DataBindConvertBlock)_in_cv;
-- (DataBindUIConvertBlock)_in_ui_cv;
 - (DataBindArrayBlock)_in_arr;
 
 
 #pragma mark - <-- 单向绑定(数据更新,只接受新数据,不发送) -->
 - (DataBindBlock)_out;
-- (DataBindUIBlock)_out_ui;
-- (DataBindNotBlock)_out_not;
-- (DataBindUINotBlock)_out_ui_not;
 - (DataBindConvertBlock)_out_cv;
-- (DataBindUIConvertBlock)_out_ui_cv;
 - (DataBindArrayBlock)_out_arr;
+- (DataBindNotBlock)_out_not;
 - (DataBindKeyAnyOutBlock)_out_key_any;
 
 

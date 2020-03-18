@@ -28,7 +28,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="IOa-7z-6QE"/>
                     </constraints>
-                    <state key="normal" title="点击将model的array 的第0位设为 @“Hello World”"/>
+                    <state key="normal" title="点击将model的array 第0位设为“Hello World”"/>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4xu-cC-JEu">
                     <rect key="frame" x="20" y="248" width="374" height="34"/>
@@ -40,7 +40,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="LqO-wf-75M"/>
                     </constraints>
-                    <state key="normal" title="点击将model的array 的第1位设为 123456"/>
+                    <state key="normal" title="点击将model的array 第1位设为 123456"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

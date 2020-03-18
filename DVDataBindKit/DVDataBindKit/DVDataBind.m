@@ -9,8 +9,8 @@
 #import "DVDataBindObserverManager.h"
 
 @interface DVDataBind()
-
-@property(nonatomic, copy, readwrite) NSString *chainCode;
+/// 链码
+@property(nonatomic, copy) NSString *chainCode;
 
 @end
 

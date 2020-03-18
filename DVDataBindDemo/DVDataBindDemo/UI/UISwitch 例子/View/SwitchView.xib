@@ -53,46 +53,55 @@ Out    只接受新数据，不发送</string>
                     <nil key="highlightedColor"/>
                 </label>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbM-l6-Sn3">
-                    <rect key="frame" x="73.5" y="165.5" width="51" height="31"/>
+                    <rect key="frame" x="40" y="165.5" width="51" height="31"/>
                 </switch>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIO-2l-M21">
-                    <rect key="frame" x="182.5" y="165.5" width="51" height="31"/>
+                    <rect key="frame" x="129" y="165.5" width="51" height="31"/>
                 </switch>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O9C-AA-hLq">
-                    <rect key="frame" x="182.5" y="216.5" width="51" height="31"/>
+                    <rect key="frame" x="129" y="216.5" width="51" height="31"/>
                 </switch>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPn-ex-W7D">
-                    <rect key="frame" x="73.5" y="216.5" width="51" height="31"/>
+                    <rect key="frame" x="40" y="216.5" width="51" height="31"/>
                 </switch>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Un-DD-1o3">
-                    <rect key="frame" x="182.5" y="267.5" width="51" height="31"/>
+                    <rect key="frame" x="129" y="267.5" width="51" height="31"/>
                 </switch>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uje-qL-713">
-                    <rect key="frame" x="291.5" y="165.5" width="51" height="31"/>
+                    <rect key="frame" x="218" y="165.5" width="51" height="31"/>
                 </switch>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLq-VR-1iI">
-                    <rect key="frame" x="291.5" y="216.5" width="51" height="31"/>
+                    <rect key="frame" x="218" y="216.5" width="51" height="31"/>
                 </switch>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GOA-Rd-vqc">
-                    <rect key="frame" x="73.5" y="267.5" width="51" height="31"/>
+                    <rect key="frame" x="40" y="267.5" width="51" height="31"/>
                 </switch>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gPG-nL-T63">
-                    <rect key="frame" x="291.5" y="267.5" width="51" height="31"/>
+                    <rect key="frame" x="218" y="267.5" width="51" height="31"/>
                 </switch>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYv-PV-s63">
-                    <rect key="frame" x="91" y="124.5" width="14" height="21"/>
+                    <rect key="frame" x="57.5" y="124.5" width="14" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InOut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9N-G5-gvj">
-                    <rect key="frame" x="186" y="124.5" width="42" height="21"/>
+                    <rect key="frame" x="132.5" y="124.5" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvw-oG-6Dx">
-                    <rect key="frame" x="301.5" y="124.5" width="29" height="21"/>
+                    <rect key="frame" x="228" y="124.5" width="29" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QqU-Ul-Cuh">
+                    <rect key="frame" x="307" y="165.5" width="51" height="31"/>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out_Not" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6j-aX-XWk">
+                    <rect key="frame" x="300" y="124.5" width="63" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -100,7 +109,6 @@ Out    只接受新数据，不发送</string>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Uje-qL-713" firstAttribute="leading" secondItem="yIO-2l-M21" secondAttribute="trailing" constant="60" id="03L-4S-RZW"/>
                 <constraint firstItem="Y9N-G5-gvj" firstAttribute="top" secondItem="49p-of-KTe" secondAttribute="bottom" constant="20" id="2Hr-V1-MP1"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4JC-Ce-Y7g" secondAttribute="trailing" constant="20" id="3Is-Oo-XZM"/>
                 <constraint firstItem="gPG-nL-T63" firstAttribute="top" secondItem="jLq-VR-1iI" secondAttribute="bottom" constant="20" id="41d-IA-Fje"/>
@@ -108,13 +116,14 @@ Out    只接受新数据，不发送</string>
                 <constraint firstItem="4Un-DD-1o3" firstAttribute="centerX" secondItem="Y9N-G5-gvj" secondAttribute="centerX" id="5aA-LF-Xke"/>
                 <constraint firstItem="Hkj-aO-CAR" firstAttribute="top" secondItem="RcT-ii-NGU" secondAttribute="bottom" constant="20" id="9Xi-wA-kIp"/>
                 <constraint firstItem="O9C-AA-hLq" firstAttribute="centerX" secondItem="Y9N-G5-gvj" secondAttribute="centerX" id="9tp-cV-rbf"/>
-                <constraint firstItem="yIO-2l-M21" firstAttribute="leading" secondItem="hbM-l6-Sn3" secondAttribute="trailing" constant="60" id="C4Z-BG-cda"/>
                 <constraint firstItem="hbM-l6-Sn3" firstAttribute="centerX" secondItem="nYv-PV-s63" secondAttribute="centerX" id="CUb-h8-cPd"/>
                 <constraint firstItem="cPn-ex-W7D" firstAttribute="centerX" secondItem="nYv-PV-s63" secondAttribute="centerX" id="CZJ-Iu-oMV"/>
+                <constraint firstItem="yIO-2l-M21" firstAttribute="leading" secondItem="hbM-l6-Sn3" secondAttribute="trailing" constant="40" id="Dlh-tp-l6f"/>
                 <constraint firstItem="qvw-oG-6Dx" firstAttribute="top" secondItem="nYv-PV-s63" secondAttribute="top" id="ESi-xz-szy"/>
                 <constraint firstItem="4JC-Ce-Y7g" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="EUb-Fy-MH2"/>
                 <constraint firstItem="Uje-qL-713" firstAttribute="top" secondItem="qvw-oG-6Dx" secondAttribute="bottom" constant="20" id="FFu-Jg-Hbq"/>
                 <constraint firstItem="RcT-ii-NGU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Gtd-kP-rMg"/>
+                <constraint firstItem="hbM-l6-Sn3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="JtS-K5-wmR"/>
                 <constraint firstItem="49p-of-KTe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="LgF-7h-T2a"/>
                 <constraint firstItem="ol2-wY-v5s" firstAttribute="top" secondItem="4JC-Ce-Y7g" secondAttribute="bottom" constant="20" id="MGe-X7-tfN"/>
                 <constraint firstItem="yIO-2l-M21" firstAttribute="centerX" secondItem="Y9N-G5-gvj" secondAttribute="centerX" id="OAU-1b-vMu"/>
@@ -124,21 +133,25 @@ Out    只接受新数据，不发送</string>
                 <constraint firstItem="O9C-AA-hLq" firstAttribute="top" secondItem="yIO-2l-M21" secondAttribute="bottom" constant="20" id="PO1-Ek-9rv"/>
                 <constraint firstItem="Uje-qL-713" firstAttribute="centerX" secondItem="qvw-oG-6Dx" secondAttribute="centerX" id="PUu-GT-xam"/>
                 <constraint firstItem="cPn-ex-W7D" firstAttribute="top" secondItem="hbM-l6-Sn3" secondAttribute="bottom" constant="20" id="Sow-eV-3eM"/>
+                <constraint firstItem="QqU-Ul-Cuh" firstAttribute="top" secondItem="x6j-aX-XWk" secondAttribute="bottom" constant="20" id="Y8v-np-hyj"/>
                 <constraint firstItem="ol2-wY-v5s" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="bMm-Eu-z7m"/>
                 <constraint firstItem="Y9N-G5-gvj" firstAttribute="top" secondItem="nYv-PV-s63" secondAttribute="top" id="fEh-om-PKO"/>
                 <constraint firstItem="gPG-nL-T63" firstAttribute="centerX" secondItem="qvw-oG-6Dx" secondAttribute="centerX" id="fv5-Th-3Ht"/>
                 <constraint firstItem="jLq-VR-1iI" firstAttribute="top" secondItem="Uje-qL-713" secondAttribute="bottom" constant="20" id="fxH-9c-AKV"/>
                 <constraint firstItem="4JC-Ce-Y7g" firstAttribute="top" secondItem="GOA-Rd-vqc" secondAttribute="bottom" constant="40" id="h3g-bP-8ZE"/>
-                <constraint firstItem="Y9N-G5-gvj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kXZ-W3-xYm"/>
+                <constraint firstItem="QqU-Ul-Cuh" firstAttribute="centerX" secondItem="x6j-aX-XWk" secondAttribute="centerX" id="hry-V0-Y0a"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="49p-of-KTe" secondAttribute="trailing" constant="20" id="lAt-wP-oac"/>
                 <constraint firstItem="jLq-VR-1iI" firstAttribute="centerX" secondItem="qvw-oG-6Dx" secondAttribute="centerX" id="lcr-OQ-5Ko"/>
                 <constraint firstItem="hbM-l6-Sn3" firstAttribute="top" secondItem="nYv-PV-s63" secondAttribute="bottom" constant="20" id="mDr-vB-sya"/>
+                <constraint firstItem="x6j-aX-XWk" firstAttribute="top" secondItem="qvw-oG-6Dx" secondAttribute="top" id="mga-4g-sF5"/>
                 <constraint firstItem="RcT-ii-NGU" firstAttribute="top" secondItem="ol2-wY-v5s" secondAttribute="bottom" constant="20" id="mgb-nS-EFo"/>
                 <constraint firstItem="4Un-DD-1o3" firstAttribute="top" secondItem="O9C-AA-hLq" secondAttribute="bottom" constant="20" id="np0-tC-mok"/>
                 <constraint firstItem="yIO-2l-M21" firstAttribute="top" secondItem="Y9N-G5-gvj" secondAttribute="bottom" constant="20" id="pAj-bs-gfb"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RcT-ii-NGU" secondAttribute="trailing" constant="20" id="qXD-07-459"/>
                 <constraint firstItem="Hkj-aO-CAR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="tqG-8x-hIw"/>
                 <constraint firstItem="GOA-Rd-vqc" firstAttribute="centerX" secondItem="nYv-PV-s63" secondAttribute="centerX" id="vq2-8a-bXp"/>
+                <constraint firstItem="QqU-Ul-Cuh" firstAttribute="leading" secondItem="Uje-qL-713" secondAttribute="trailing" constant="40" id="xEW-gf-xnK"/>
+                <constraint firstItem="Uje-qL-713" firstAttribute="leading" secondItem="yIO-2l-M21" secondAttribute="trailing" constant="40" id="yCc-by-9Lh"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
@@ -150,6 +163,7 @@ Out    只接受新数据，不发送</string>
                 <outlet property="inoutSW1" destination="yIO-2l-M21" id="kNq-Lu-0FS"/>
                 <outlet property="inoutSW2" destination="O9C-AA-hLq" id="77j-7w-fMz"/>
                 <outlet property="inoutSW3" destination="4Un-DD-1o3" id="4lk-NZ-Pzi"/>
+                <outlet property="notSW" destination="QqU-Ul-Cuh" id="jQu-38-MPM"/>
                 <outlet property="outSW1" destination="Uje-qL-713" id="W5u-4U-yVq"/>
                 <outlet property="outSW2" destination="jLq-VR-1iI" id="InK-Bk-jFa"/>
                 <outlet property="outSW3" destination="gPG-nL-T63" id="gff-nV-fWz"/>

@@ -66,11 +66,12 @@
     ._inout_ui(self.swView.inoutSW1, @"on", UIControlEventValueChanged)
     ._inout_ui(self.swView.inoutSW2, @"on", UIControlEventValueChanged)
     ._inout_ui(self.swView.inoutSW3, @"on", UIControlEventValueChanged)
-    ._out_ui(self.swView.outSW1, @"on", UIControlEventValueChanged)
-    ._out_ui(self.swView.outSW2, @"on", UIControlEventValueChanged)
-    ._out_ui(self.swView.outSW3, @"on", UIControlEventValueChanged)
+    ._out(self.swView.outSW1, @"on") // 因为这里只是改变enable属性，没有手动触发控件事件，不用控件事件
+    ._out(self.swView.outSW2, @"on")
+    ._out(self.swView.outSW3, @"on")
+    ._out_not(self.swView.notSW, @"on")
     ._inout_ui(self.swView.textField, @"text", UIControlEventEditingChanged)
-    ._out(self.swView.btnChangeEnable , @"enabled") // 因为这里只是改变enable属性，没有手动触发控件事件，可不写控件事件
+    ._out(self.swView.btnChangeEnable , @"enabled")
     ._out_key_any(@"自定义名", ^{
         BOOL isON = weakSelf.swModel.isON;
         // 可断点查看 model的isON 是否同步改变
@@ -78,15 +79,11 @@
     });
     
     
-    [self.swView.btnChangeIsON addTarget:self
-                                  action:@selector(onClickForChanageIsON:)
-                        forControlEvents:UIControlEventTouchUpInside];
-}
-
-
-#pragma mark - <-- Response -->
-- (void)onClickForChanageIsON:(UIButton *)sender {
-    self.swModel.isON = !self.swModel.isON;  //model绑定了UI，直接改变model的数据会自动更新UI
+    DVDataBind
+    ._in_ui(self.swView.btnChangeIsON, @"highlighted", UIControlEventTouchUpInside)
+    ._out_key_any(@"自定义", ^{
+        weakSelf.swModel.isON = !weakSelf.swModel.isON;  //model绑定了UI，直接改变model的数据会自动更新UI
+    });
 }
 
 @end

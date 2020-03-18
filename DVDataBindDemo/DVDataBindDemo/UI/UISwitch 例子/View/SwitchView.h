@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UISwitch *outSW1;
 @property (weak, nonatomic) IBOutlet UISwitch *outSW2;
 @property (weak, nonatomic) IBOutlet UISwitch *outSW3;
+@property (weak, nonatomic) IBOutlet UISwitch *notSW;
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 

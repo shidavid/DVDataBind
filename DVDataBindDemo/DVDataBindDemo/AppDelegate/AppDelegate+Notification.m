@@ -100,10 +100,11 @@
     }
     
     UIViewController *vc = DVManager.app.currentViewController;
-    UIView *txtField = (UIView *)[self.window performSelector:@selector(firstResponder)];
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    UIView *txtField = (UIView *)[window performSelector:@selector(firstResponder)];;
     
     if (vc && txtField ){ //}&& (beginHeight == endHeight)) {
-        CGFloat kbMinY = DVFrame.height - endHeight;
+        CGFloat kbMinY = DVFrame.height - endHeight - 60;
         CGRect txtFrame = [txtField convertRect:txtField.bounds toView:vc.view];
         CGFloat txtMaxY = CGRectGetMaxY(txtFrame);
         

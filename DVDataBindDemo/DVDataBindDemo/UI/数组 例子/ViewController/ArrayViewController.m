@@ -72,7 +72,7 @@
         NSLog(@"[ArrayViewController LOG]: array第1位 -> %@",text);
     });
     
-
+    
 
     [self.arrayView.btnChange1 addTarget:self
                                   action:@selector(onClickForChange1:)

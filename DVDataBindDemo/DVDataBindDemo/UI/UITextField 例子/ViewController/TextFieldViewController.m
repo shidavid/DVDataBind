@@ -77,25 +77,21 @@
     DVDataBind
     ._inout(self.textModel, @"num")
     ._inout(self.textModel, @"text")
-    
     ._out(self.textView.lblNormal, @"text")
     ._out_cv(self.textView.lblConvert, @"text", ^NSString *(NSString *text) {
         // 手动转换
         NSString *tempText = [NSString stringWithFormat:@"AAA - %@ - BBB",text];
         return tempText;
     })
-    
     ._inout_ui(self.textView.textField1, @"text", UIControlEventEditingChanged)
     ._inout_ui(self.textView.textField2, @"text", UIControlEventEditingChanged)
-    
-    ._filter(^BOOL(id value){  // 返回YES 则正常数据更新
+    ._filter(^BOOL(id value) {  // 返回YES 则正常数据更新
         if ([value isKindOfClass:[NSString class]]) {
             NSString *text = (NSString *)value;
             return text.length <= 20;
         }
         return YES;
     })
-    
     ._out_key_any(@"自定义名", ^{
         int num = weakSelf.textModel.num;
         NSString *text = weakSelf.textModel.text;
