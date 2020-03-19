@@ -3,8 +3,11 @@
 >前言：2年前空闲时间玩了Vue.js, 发现利用数据双向绑定，开发如此轻松简洁，我了解iOS也有类似的框架 ReactiveCocoa,  ReactiveCocoa有点复杂和笨重，我只需要简单点的数据绑定，所以写了一个轻量级的数据绑定，麻烦大家看一下，有问题请指点下
 
 ***
-### 1.介绍:
-例子:
+### 1.Demo例子:
+
+
+> github地址: https://github.com/shidavid/DVDataBind
+> 其他例子：[利用 DVDataBind 双向绑定 + MVVM 简单实现登录界面](https://www.jianshu.com/p/0ba649cc624c)
 ```
 DVDataBind
 ._inout(self.demoModel, @"text")
@@ -16,15 +19,16 @@ DVDataBind
     self.demoModel.text = @"Hello World";
 }
 ```
-![](https://upload-images.jianshu.io/upload_images/2145107-cc563c47d312d653.gif?imageMogr2/auto-orient/strip)
+![](https://upload-images.jianshu.io/upload_images/2145107-3c7d791f93e5b437.gif?imageMogr2/auto-orient/strip)
 
-
+---
+### 2.介绍:
 >1) 不限定只能UI与Model绑定，只要支持KVC的数据都能绑定
 >2) 使用链式编程，支持多项绑定
 >3)  支持单向数据流/双向数据流
 >4) 支持 字符串,整形,浮点型,布尔类型 之间数据自动转换 (对象类型除外)
 >5) 支持过滤, 转换, 观察数组某一位数据变化
->6) 无需继承父类，无需手动解绑， 当目标对象内存释放，DataBind自动解绑和释放内存
+>6) 无需继承基类，无需手动解绑， 当目标对象内存释放，DataBind自动解绑和释放内存
 
 
 
@@ -32,7 +36,7 @@ DVDataBind
 
 
 ***
-### 2.思路
+### 3.思路
 1. A 与 B 双向数据绑定，Ain数据变化更新Aout、Bout数据，Bin同理
 ![](https://upload-images.jianshu.io/upload_images/2145107-30f94ef259dd2e57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -49,7 +53,7 @@ DVDataBind
 
 
 ***
-### 3.用法
+### 4.用法
 - DVDataBind 必须用 _in 或 _inout 开头, 后面绑定顺序先后随意, 任意组合, 不影响结果
 - _in 只发送新数据，_inout 可接受和发送新数据，_out 只接受新数据
 - 目标对象必须支持KVC
@@ -363,7 +367,7 @@ DVDataBind
 ```
 
 ***
-### 4.如何导入项目
+### 5.如何导入项目
 1. 编译DVDataBindKitShell
 ![](https://upload-images.jianshu.io/upload_images/2145107-9b7b9e7e1b84708f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
@@ -373,14 +377,15 @@ DVDataBind
 3. 项目 Target -> Build Settings -> Linking ->Other Linker Flags 添加参数:  -all_load  -ObjC
 ![](https://upload-images.jianshu.io/upload_images/2145107-b6f41ef854380dff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
-
-
-
+4. 在PCH文件导入
+```
+#import <DVDataBindKit/DVDataBindKit.h>
+```
 
 
 
 
 *** 
-### 5.结语:
+### 6.结语:
 github地址: https://github.com/shidavid/DVDataBind
 谢谢大家观看,有兴趣麻烦点个星星关注下 😁😁😁
