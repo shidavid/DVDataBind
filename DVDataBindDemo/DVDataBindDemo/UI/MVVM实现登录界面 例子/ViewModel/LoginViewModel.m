@@ -7,12 +7,14 @@
 //
 
 #import "LoginViewModel.h"
+#import "LoginModel.h"
+
 
 @implementation LoginViewModel
 
 - (BOOL)btnLoginEnable {
-    return (self.loginModel.userName && self.loginModel.userName.length > 0
-            && self.loginModel.password && self.loginModel.password.length > 0);
+    return (self.userName && self.userName.length > 0
+            && self.password && self.password.length > 0);
 }
 
 - (BOOL)filterUserName:(NSString *)userName {
@@ -26,10 +28,13 @@
 }
 
 - (void)login {
-    NSString *userName = self.loginModel.userName;
-    NSString *password = self.loginModel.password;
+    // Model是服务器请求数据, ViewModel是关于View的Model
+    LoginModel *model = [[LoginModel alloc] init];
+    model.userName = self.userName;
+    model.password = self.password;
     
-    NSLog(@"登录成功, userName -> %@, password -> %@", userName, password);
+    // 这里post model 到服务器
+    NSLog(@"登录成功, userName -> %@, password -> %@", model.userName, model.password);
 }
 
 @end

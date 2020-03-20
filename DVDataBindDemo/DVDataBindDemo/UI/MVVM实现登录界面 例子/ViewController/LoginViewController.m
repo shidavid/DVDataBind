@@ -13,7 +13,6 @@
 @interface LoginViewController ()
 
 @property(nonatomic, strong) LoginView *loginView;
-@property(nonatomic, strong) LoginModel *loginModel;
 @property(nonatomic, strong) LoginViewModel *loginViewModel;
 
 @end
@@ -25,7 +24,7 @@
     [super viewDidLoad];
 
     [self initViews];
-    [self initModels];
+    [self initViewModels];
     [self bindData];
 }
 
@@ -35,19 +34,19 @@
     self.loginView.backgroundColor = [UIColor Blue];
 }
 
-- (void)initModels {
-    self.loginModel = [[LoginModel alloc] init];
-    
+- (void)initViewModels {
+  
     self.loginViewModel = [[LoginViewModel alloc] init];
-    self.loginViewModel.loginModel = self.loginModel;
 }
+
 
 - (void)bindData {
     __weak __typeof(self)weakSelf = self;
     
+    // 这里 View 跟 ViewModel 双向绑定
     DVDataBind
     ._in_ui(self.loginView.userNameText, @"text", UIControlEventEditingChanged)
-    ._out(self.loginModel, @"userName")
+    ._out(self.loginViewModel, @"userName")
     ._filter(^BOOL(NSString *text) {
         return [weakSelf.loginViewModel filterUserName:text];
     })
@@ -58,7 +57,7 @@
     
     DVDataBind
     ._in_ui(self.loginView.passwordText, @"text", UIControlEventEditingChanged)
-    ._out_cv(self.loginModel, @"password", ^(NSString *text){
+    ._out_cv(self.loginViewModel, @"password", ^(NSString *text){
         // textField.secureTextEntry = YES时, text为密文, 需要转换
         return [NSString stringWithUTF8String:text.UTF8String];
     })

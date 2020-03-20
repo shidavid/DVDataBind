@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LoginModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+// ViewModel 是关于 View的Model
 @interface LoginViewModel : NSObject
 
-@property(nonatomic, weak) LoginModel *loginModel;
+@property(nonatomic, copy) NSString *userName;
+@property(nonatomic, copy) NSString *password;
 
 - (BOOL)btnLoginEnable;
 

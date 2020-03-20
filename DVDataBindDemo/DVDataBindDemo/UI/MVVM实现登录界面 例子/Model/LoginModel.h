@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// 这个 Model 是服务器的数据
 @interface LoginModel : NSObject
 
 @property(nonatomic, copy) NSString *userName;
