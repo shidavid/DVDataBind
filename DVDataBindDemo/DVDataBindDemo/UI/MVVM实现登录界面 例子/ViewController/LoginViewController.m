@@ -25,7 +25,7 @@
 
     [self initViews];
     [self initViewModels];
-    [self bindData];
+    [self bindViewModel];
 }
 
 #pragma mark - <-- Init -->
@@ -35,12 +35,10 @@
 }
 
 - (void)initViewModels {
-  
     self.loginViewModel = [[LoginViewModel alloc] init];
 }
 
-
-- (void)bindData {
+- (void)bindViewModel {
     __weak __typeof(self)weakSelf = self;
     
     // 这里 View 跟 ViewModel 双向绑定
@@ -48,6 +46,7 @@
     ._in_ui(self.loginView.userNameText, @"text", UIControlEventEditingChanged)
     ._out(self.loginViewModel, @"userName")
     ._filter(^BOOL(NSString *text) {
+        //这里判断用户名是否符合规范、校验、限制等等操作，return YES 数据才能更新
         return [weakSelf.loginViewModel filterUserName:text];
     })
     ._out_key_any(@"login.userName.text", ^{
@@ -76,6 +75,5 @@
         [weakSelf.loginViewModel login];
     });
 }
-
 
 @end
