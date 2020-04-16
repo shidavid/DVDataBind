@@ -1,14 +1,16 @@
-详情请看简书 ：https://www.jianshu.com/p/2a2ce5bf2306
-
 >前言：2年前空闲时间玩了Vue.js, 发现利用数据双向绑定，开发如此轻松简洁，我了解iOS也有类似的框架 ReactiveCocoa,  ReactiveCocoa有点复杂和笨重，我只需要简单点的数据绑定，所以写了一个轻量级的数据绑定，麻烦大家看一下，有问题请指点下
 
 ***
 ### 1.Demo例子:
+>- 一般配合MVVM架构使用,主要用于View和ViewModel双向绑定，也可用于其他数据双向绑定
+>- 这里介绍下双向数据绑定好处:    
+>   1. View.textField 跟 ViewModel.text 绑定，用户在输入框textField输入"Hello World"，text也会响应式更新，此时text = @"Hello World", 我们只要对text进行处理    
+>   2. 如果我们从网络获取Model，Model 转换并赋值于 ViewModel.text，View也会响应式更新界面, 整个过程都是对ViewModel.text进行操作，不会再去处理View部分
 
-
-> github地址: https://github.com/shidavid/DVDataBind
-> 其他例子：[利用 DVDataBind 双向绑定 + MVVM 简单实现登录界面](https://www.jianshu.com/p/0ba649cc624c)
+> github地址: https://github.com/shidavid/DVDataBind   
+> 其他例子：[利用 DVDataBind 双向绑定 + MVVM 简单实现登录界面](https://juejin.im/post/5e72d699e51d452712106a3e)
 ```
+// 这里只是展示响应式变化 
 DVDataBind
 ._inout(self.demoModel, @"text")
 ._inout_ui(self.demoView.textField, @"text", UIControlEventEditingChanged)
@@ -19,15 +21,15 @@ DVDataBind
     self.demoModel.text = @"Hello World";
 }
 ```
-![](https://upload-images.jianshu.io/upload_images/2145107-3c7d791f93e5b437.gif?imageMogr2/auto-orient/strip)
+![](https://user-gold-cdn.xitu.io/2020/3/19/170f093f28b15bc7?w=320&h=693&f=gif&s=802342)
 
 ---
 ### 2.介绍:
->1) 不限定只能UI与Model绑定，只要支持KVC的数据都能绑定
+>1) 不限定只能 View 与 ViewModel 绑定，只要支持KVC的数据都能双向绑定
 >2) 使用链式编程，支持多项绑定
 >3)  支持单向数据流/双向数据流
 >4) 支持 字符串,整形,浮点型,布尔类型 之间数据自动转换 (对象类型除外)
->5) 支持过滤, 转换, 观察数组某一位数据变化
+>5) 支持过滤, 限制，转换, 观察数组某一位数据变化
 >6) 无需继承基类，无需手动解绑， 当目标对象内存释放，DataBind自动解绑和释放内存
 
 
@@ -38,17 +40,17 @@ DVDataBind
 ***
 ### 3.思路
 1. A 与 B 双向数据绑定，Ain数据变化更新Aout、Bout数据，Bin同理
-![](https://upload-images.jianshu.io/upload_images/2145107-30f94ef259dd2e57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://user-gold-cdn.xitu.io/2020/3/19/170f09412e4629e5?w=486&h=130&f=png&s=17003)
 
 2. 有时候 A 与 B 双向绑定，B 与 C 双向绑定, 其实相当于 A、B、C 一起绑定在一条数据链Chain上, 每当有一个in数据变化, 发送新数据到Chain上，再由Chain更新所有的out数据
-![](https://upload-images.jianshu.io/upload_images/2145107-3df76354611cd9af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://user-gold-cdn.xitu.io/2020/3/19/170f094163db1df5?w=718&h=118&f=png&s=32569)
 
 这样实现单向/双向数据流
-![](https://upload-images.jianshu.io/upload_images/2145107-871579167ad13e50.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://user-gold-cdn.xitu.io/2020/3/19/170f09408882e3fc?w=386&h=154&f=png&s=12520)
 
 
 3. 利用KVO, 数据链就相当于Obverse，每个Observer用一个ChainCode标记，Observer观察每个in数据变化，并更新到所有Out数据
-![](https://upload-images.jianshu.io/upload_images/2145107-e7ed12a7e7c9d0c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://user-gold-cdn.xitu.io/2020/3/19/170f09411a59e72d?w=1240&h=756&f=png&s=186948)
 
 
 
@@ -94,77 +96,77 @@ DVDataBind
 
 举例:
 /* 
-  view  -> UITextField *textField;
-  model -> NSString *text;
+  view      -> UITextField *textField;
+  viewModel -> NSString *text;
 */
 DVDataBind
 ._inout_ui(view.textField, @"text", UIControlEventEditingChanged)
-._inout(model, "text");
+._inout(viewModel, "text");
 
 
 /*
- view  -> UILabel *label;
- model -> NSString *text;
+ view      -> UILabel *label;
+ viewModel -> NSString *text;
  UILabel 不支持 UIControlEvents
 */
 DVDataBind
-._in(model, "text");
+._in(viewModel, "text");
 ._out(view.label, @"text");
 
 
 /*
- view  -> UISwitch * switch;
- model -> BOOL isON;
+ view      -> UISwitch * switch;
+ viewModel -> BOOL isON;
 */
 DVDataBind
 ._inout_ui(view.switch, @"on", UIControlEventValueChanged)
-._inout(model, "isON");
+._inout(viewModel, "isON");
 
 
 /*
- view  -> UIImageView *imageView;
- model -> UIImage *image;
+ view      -> UIImageView *imageView;
+ viewModel -> UIImage *image;
  UIImageView 不支持 UIControlEvents
 */
 DVDataBind
-._in(model, "image");
+._in(viewModel, "image");
 ._out(view.imageView, @"image");
 
 
 /*
- view  -> UISlider *slider;
- model -> float value;
+ view      -> UISlider *slider;
+ viewModel -> float value;
 */
 DVDataBind
 ._inout_ui(view.slider, @"value", UIControlEventValueChanged)
-._inout(model, "value");
+._inout(viewModel, "value");
 
 
 /*
- view  -> UIProgressView *progressView;
- model -> float value;
+ view      -> UIProgressView *progressView;
+ viewModel -> float value;
 */
 DVDataBind
 ._inout_ui(view.progressView, @"progress", UIControlEventValueChanged)
-._inout(model, "value");
+._inout(viewModel, "value");
 
 
 /*
-  view  -> UISegmentedControl *segmented;
-  model -> int index;
+  view      -> UISegmentedControl *segmented;
+  viewModel -> int index;
 */
 DVDataBind
 ._inout_ui(view.segmented, @"selectedSegmentIndex", UIControlEventValueChanged)
-._inout(model, "index");
+._inout(viewModel, "index");
 
 
 /*
- view  -> UIStepper *stepper;
- model -> int index;
+ view      -> UIStepper *stepper;
+ viewModel -> int index;
 */
 DVDataBind
 ._inout_ui(view.stepper, @"value", UIControlEventValueChanged)
-._inout(model, "index");
+._inout(viewModel, "index");
 
 
 /*
@@ -174,7 +176,7 @@ DVDataBind
 DVDataBind
 ._in_ui(view.button, @"highlighted", UIControlEventTouchUpInside)
 ._out_key_any(@"自定义", ^{
-        
+    // 点击触发
 });
 ```
 
@@ -199,38 +201,38 @@ DVDataBind
 
 特殊情况:
 /*
-view  -> UITextField *textField;
-model -> NSString *text;
-model -> int number;
+view      -> UITextField *textField;
+viewModel -> NSString *text;
+viewModel -> int number;
 支持 字符串,整形,浮点型,布尔类型 之间数据自动转换 (对象类型除外)
 如果text为非数字, 则number为0
 */
 DVDataBind
 ._inout_ui(view.textField, @"text", UIControlEventEditingChanged)
-._inout(model, "text")
-._inout(model, "number"); 
+._inout(viewModel, "text")
+._inout(viewModel, "number"); 
 
 
 /*
 view  -> UITextField *textField;
 view  -> UILabel *label;
-model -> NSString *text;
-model -> int number;
+viewModel -> NSString *text;
+viewModel -> int number;
 这里 更新值有 NSString, int 类型，上面说过这些类型之间自动转换
-model->text 获取更新值自动转为NSString, 处理完返回NSString 再去更新自己
-model->number 获取更新值自动转为NSNumber, 处理完返回NSNumber 再去更新自己
+viewModel->text 获取更新值自动转为NSString, 处理完返回NSString 再去更新自己
+viewModel->number 获取更新值自动转为NSNumber, 处理完返回NSNumber 再去更新自己
 */
 DVDataBind
-._inout_ui(view. textField, @"text", UIControlEventEditingChanged)
-._out_cv(view. label, @"text", ^NSString *(NSString *text) {
+._inout_ui(view.textField, @"text", UIControlEventEditingChanged)
+._out_cv(view.label, @"text", ^NSString *(NSString *text) {
     NSString *tempText = [NSString stringWithFormat:@"AAA - %@ - BBB",text];
     return tempText;
 })
-._inout_cv(self.textModel, @"text", ^NSString *(NSString *text) {
+._inout_cv(viewModel, @"text", ^NSString *(NSString *text) {
     NSString *tempText = [NSString stringWithFormat:@"CCC - %@ - DDD",text];
     return tempText;
 } )
-._inout_cv(self.textModel, @"number", ^NSNumber *(NSNumber *num) {
+._inout_cv(viewModel, @"number", ^NSNumber *(NSNumber *num) {
     int value = [num intValue];
     return @(value + 123456);
 });
@@ -304,10 +306,12 @@ DVDataBind
  });
 ```
 
-##### 7.过滤
+##### 7.过滤,限制
 - 一个数据链只能绑定一个过滤, 更新数据不支持自动转换
+- 在这里可以对数据进行判断，限制，校验等等操作
 ```
 ._filter(^BOOL(Class 变量) {  
+    // 这里可以对数据进行判断，限制，校验等等
     return YES/NO; // 返回YES 则正常数据更新, NO不更新
 })
 
@@ -369,13 +373,13 @@ DVDataBind
 ***
 ### 5.如何导入项目
 1. 编译DVDataBindKitShell
-![](https://upload-images.jianshu.io/upload_images/2145107-9b7b9e7e1b84708f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+![](https://user-gold-cdn.xitu.io/2020/3/19/170f0945f40dfe74?w=746&h=106&f=png&s=21549)
 
 2. 生成Framework拖入项目
-![](https://upload-images.jianshu.io/upload_images/2145107-d63774bc448d86c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+![](https://user-gold-cdn.xitu.io/2020/3/19/170f09466dd54858?w=800&h=172&f=png&s=57474)
 
 3. 项目 Target -> Build Settings -> Linking ->Other Linker Flags 添加参数:  -all_load  -ObjC
-![](https://upload-images.jianshu.io/upload_images/2145107-b6f41ef854380dff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+![](https://user-gold-cdn.xitu.io/2020/3/19/170f094060959da9?w=800&h=186&f=png&s=22698)
 
 4. 在PCH文件导入
 ```
@@ -386,6 +390,6 @@ DVDataBind
 
 
 *** 
-### 6.结语:
-github地址: https://github.com/shidavid/DVDataBind
+### 6.结语: 
+> github地址: https://github.com/shidavid/DVDataBind   
 谢谢大家观看,有兴趣麻烦点个星星关注下 😁😁😁
