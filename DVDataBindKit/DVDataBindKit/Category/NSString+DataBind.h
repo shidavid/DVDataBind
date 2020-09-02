@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (DataBind)
 
+- (unsigned int)db_unsignedIntValue;
+- (unsigned long long)db_unsignedLongLongValue;
+
 - (NSNumber *)db_covertToNumberForType:(DBPropertyType)type;
 
 @end
