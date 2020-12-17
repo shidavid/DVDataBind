@@ -45,7 +45,7 @@
     if ([self isKindOfClass:[NSNumber class]]) {
         NSNumber *num = (NSNumber *)self;
         const char *type = num.objCType;
-        return [self db_getPropertyRealType:type];
+        return [self db_getPropertyRealType:type isFree:NO];
     }
     else if ([self isKindOfClass:[NSString class]]) {
         return DBPropertyType_NSString;
@@ -72,10 +72,10 @@
     objc_property_t property = class_getProperty([self class], propertyName.UTF8String);
     const char *property_attr =  property_copyAttributeValue(property, "T");
     
-    return [self db_getPropertyRealType:property_attr];
+    return [self db_getPropertyRealType:property_attr isFree:YES];
 }
 
-- (DBPropertyType)db_getPropertyRealType:(const char *)property_attr {
+- (DBPropertyType)db_getPropertyRealType:(const char *)property_attr isFree:(BOOL)isFree {
     DBPropertyType type = DBPropertyType_Void;
     char t = property_attr[0];
 
@@ -128,6 +128,9 @@
     } else if (t == '#') {
         type = DBPropertyType_Class;
     }
+    
+    if (isFree) free(property_attr);
+    
     return type;
 }
 
